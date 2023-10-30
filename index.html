@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./libs/spectrum/spectrum.css">
 	<link rel="stylesheet" type="text/css" href="./libs/jstree/themes/mixed/style.css">
 
+	<link rel="stylesheet" type="text/css" href="./libs/guide/guide.css">
 </head>
 
 <body>
@@ -28,6 +29,8 @@
 	<script src="./libs/jstree/jstree.js"></script>
 	<script src="./libs/potree/potree.js"></script>
 	<script src="./libs/plasio/js/laslaz.js"></script>
+
+	<script src="./libs/guide/guide.js"></script>
 	
 	<!-- INCLUDE ADDITIONAL DEPENDENCIES HERE -->
 	<!-- INCLUDE SETTINGS HERE -->
@@ -37,7 +40,21 @@
 		<div id="potree_sidebar_container"> </div>
 	</div>
 
-	<script src="./configuration.js"></script>
+	<!-- <div class="guide_area"> -->
+		<div class="guide_container guide_position guide_container-closed" id="guide">
+			<div class="guide_header">
+				<div class="guide_title">Guide</div>
+				<img class="guide_close-button" src="./libs/guide/icons/close.svg"/>
+			</div>
+			<div class="guide_list">
+				<div class="guide_list-element"><img src="./libs/guide/icons/double-click.svg"/><b>Double click</b>&nbsp;to jump to an area</div>
+				<div class="guide_list-element"><img src="./libs/guide/icons/scroll.svg"/><b>Scroll</b>&nbsp;to zoom</div>
+				<div class="guide_list-element"><img src="./libs/guide/icons/hold-left.svg"/><b>Hold left</b>&nbsp;to rotate</div>
+				<div class="guide_list-element"><img src="./libs/guide/icons/hold-right.svg"/><b>Hold right</b>&nbsp;to change position</div>
+			</div>
+		</div>
+		<!-- </div> -->
+
 	<script>
 
 		Potree.loadPointCloud("./pointclouds/Test/metadata.json", "Test", e => {
