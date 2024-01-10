@@ -17,3 +17,57 @@ viewer.loadGUI(() => {
 	$("#menu_clipping").next().show();
 	viewer.toggleSidebar();
 });
+
+$(document).ready(function(){
+	setTimeout(function(){
+
+		//Remove measurements
+		document.querySelector('[title="Angle measurement"]').remove();
+		document.querySelector('[title="Point measurement"]').remove();
+		document.querySelector('[title="Circle measurement"]').remove();
+		document.querySelector('[data-i18n="Azimuth"]').remove();
+		document.querySelector('[title="Area measurement"]').remove();
+		document.querySelector('[title="Annotation"]').remove();
+
+		//Default accordion
+		$(".accordion > div").hide();
+		$("#menu_tools").next().show();
+		$("#menu_filters").next().show();
+
+		//Remove classifications
+		var classElement = document.querySelectorAll('#classificationList li');
+		classElement[3].style.display = 'none'; //ground
+		classElement[4].style.display = 'none'; //low vegetation
+		classElement[5].style.display = 'none'; //medium vegetation
+		classElement[7].style.display = 'none'; //building
+		classElement[8].style.display = 'none'; //lowpoint
+		classElement[9].style.display = 'none'; //keypoint
+		classElement[11].style.display = 'none'; //overlap
+
+		//Change classifications labels
+		var classLabels = document.querySelectorAll('span');
+		classLabels.forEach(function(span) {
+
+			if (span.textContent === 'show/hide all') {
+				span.textContent = 'Show / Hide all';
+			};
+			if (span.textContent === 'never classified') {
+				span.textContent = 'Ground';
+			};
+			if (span.textContent === 'unclassified') {
+				span.textContent = 'Objects';
+			};
+			if (span.textContent === 'high vegetation') {
+				span.textContent = 'Underwater';
+			};
+			if (span.textContent === 'water') {
+				span.textContent = 'Water';
+			};
+			if (span.textContent === 'default') {
+				span.textContent = 'Default';
+			};
+
+		});
+
+	}, 100)
+});
