@@ -69,5 +69,23 @@ $(document).ready(function(){
 
 		});
 
+		//Remove sidebar elements
+		document.querySelector('#clipping_tools').remove();
+		document.querySelector('#cliptask_options').remove();
+		document.querySelector('#clipmethod_options').remove();
+		document.querySelector('#navigation').remove();
+		document.querySelector('#lblMoveSpeed').remove();
+		document.querySelector('#sldMoveSpeed').remove();
+		document.querySelector('[data-i18n="appearance.move_speed"]').remove();
+		document.querySelector('#splat_quality_options').remove();
+		document.querySelector('#show_bounding_box').remove();
+		document.querySelector('[data-i18n="appearance.box"]').remove();
+		document.querySelector('#set_freeze').remove();
+		document.querySelector('[data-i18n="appearance.freeze"]').remove();
+
+		//Remove export options
+		document.querySelector('[download="measure.json"]').remove();
+		document.querySelector('[download="potree.json5"]').remove();
+
 	}, 100)
 });

@@ -988,3 +988,143 @@ legend{
 	padding-top: 0.6em;
 	padding-bottom: 0.1em;
 }
+
+/* Custom */
+
+/*input[type="checkbox"]{
+	height: 16px; width: 16px;
+	background-color: #CECECE!important;
+}
+input[type="checkbox"]:checked{
+	background-color: #f7b500!important;
+	border-color: #000!important;
+}*/
+
+/* Verstecke die Standard-Checkbox */
+input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 20px;
+	height: 20px;
+	margin-right: 12px;
+	border-radius: 4px!important;
+	outline: none;
+	cursor: pointer;
+	font-family: 'FontAwesome';
+  }
+  
+  /* Stilisiere die benutzerdefinierte Checkbox */
+  input[type="checkbox"]::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 0px solid #faca30;
+	border-radius: 4px!important;
+	background-color: white;
+	vertical-align: middle;
+	transition: background-color 0.3s, border-color 0.3s;
+	font-family: 'FontAwesome';
+  }
+  
+  /* Fügen Sie den Haken im "checked" Zustand hinzu */
+  input[type="checkbox"]:checked::before {
+	content: "\f00c";
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #faca30;
+	color: black;
+	font-family: 'FontAwesome';
+	border-radius: 4px!important;
+  }
+
+  input[type="button"]{
+	background-color:#323232;
+	color: white;
+	font-size: 14px;
+	padding: 10px 16px;
+	border-radius: 8px;
+	font-weight: 600;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+	border: 0px solid;
+	transition: all .25s ease;
+  }
+  input[type="button"]:hover{
+	background-color: #404040;
+  }
+  
+  input[type="text"]{
+	padding: 10px 16px;
+	border-radius: 8px;
+	border: 0px solid;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Montserrat", sans-serif;
+	max-width: 120px;
+  }
+
+  .sp-dd{
+	display: none!important;
+  }
+  .sp-preview{
+	margin-right: 0!important;
+	border: none!important;
+	border-radius: 4px!important;
+	overflow: hidden;
+  }
+  .sp-replacer{
+	background: none!important;
+	border: 2px solid #484848!important;
+	border-radius: 8px;
+  }
+  .sp-active{
+	border-radius: 8px 8px 0 0!important;
+  }
+  .sp-container{
+	border-radius: 0px 12px 12px 12px!important;
+	border: 2px solid #484848!important;
+	background: #181818!important;
+	margin-bottom: none!important;
+	padding-bottom: none!important;
+	padding: 8px!important;
+	margin-top: -2px!important;
+  }
+  .sp-picker-container{
+	border-left: none!important;
+	margin-top: -2px!important;
+  }
+  .sp-input{
+	color: #fff!important;
+	font-family: "Montserrat", sans-serif!important;
+	font-weight: 600!important;
+	background: #323232!important;
+	max-width: 100%!important;
+	margin-bottom: 8px!important;
+  }
+  .sp-choose{
+	background:#323232!important;
+	color: white!important;
+	font-size: 14px!important;
+	padding: 10px 16px!important;
+	border-radius: 8px!important;
+	font-weight: 600!important;
+	font-family: "Montserrat", sans-serif!important;
+	cursor: pointer!important;
+	border: 0px solid!important;
+	transition: all .25s ease!important;
+	text-shadow: none!important;
+  }
+  .sp-choose:hover{
+	background-color: #404040!important;
+  }
+  .sp-color{
+	border-radius: 8px!important;
+    overflow: hidden!important;
+  }
+  .sp-hue{
+	border-radius: 8px!important;
+    overflow: hidden!important;
+  }

@@ -59038,18 +59038,18 @@ void main() {
 	const ClassificationScheme = {
 
 		DEFAULT: {
-			0:       { visible: true, name: 'never classified'  , color: [0.5,  0.5,  0.5,  1.0] },
-			1:       { visible: true, name: 'unclassified'      , color: [0.5,  0.5,  0.5,  1.0] },
+			0:       { visible: true, name: 'never classified'  , color: [0.08,  0.25,  1,  1.0] },
+			1:       { visible: true, name: 'unclassified'      , color: [0.9,  0.15,  0,  1.0] },
 			2:       { visible: true, name: 'ground'            , color: [0.63, 0.32, 0.18, 1.0] },
 			3:       { visible: true, name: 'low vegetation'    , color: [0.0,  1.0,  0.0,  1.0] },
 			4:       { visible: true, name: 'medium vegetation' , color: [0.0,  0.8,  0.0,  1.0] },
-			5:       { visible: true, name: 'high vegetation'   , color: [0.0,  0.6,  0.0,  1.0] },
+			5:       { visible: true, name: 'high vegetation'   , color: [0.08,  0.85,  0.25,  1.0] },
 			6:       { visible: true, name: 'building'          , color: [1.0,  0.66, 0.0,  1.0] },
 			7:       { visible: true, name: 'low point(noise)'  , color: [1.0,  0.0,  1.0,  1.0] },
-			8:       { visible: true, name: 'key-point'         , color: [1.0,  0.0,  0.0,  1.0] },
-			9:       { visible: true, name: 'water'             , color: [0.0,  0.0,  1.0,  1.0] },
+			8:       { visible: true, name: 'key-point'         , color: [0.52,  0.0,  0.9,  1.0] },
+			9:       { visible: true, name: 'water'             , color: [0.52,  0.0,  0.9,  1.0] },
 			12:      { visible: true, name: 'overlap'           , color: [1.0,  1.0,  0.0,  1.0] },
-			DEFAULT: { visible: true, name: 'default'           , color: [0.3,  0.6,  0.6,  0.5] },
+			DEFAULT: { visible: true, name: 'default'           , color: [0.88,  0.03,  0.46,  1] },
 		}
 	};
 
@@ -79049,7 +79049,7 @@ ENDSEC
 		createToolIcon(icon, title, callback){
 			let element = $(`
 			<img src="${icon}"
-				style="width: 32px; height: 32px"
+				style="width: 40px; height: 40px"
 				class="button-icon"
 				data-i18n="${title}" />
 		`);
@@ -80110,9 +80110,9 @@ ENDSEC
 
 				let element = $(`
 				<li>
-					<label style="whitespace: nowrap; display: flex">
+					<label style="whitespace: nowrap; display: flex; align-items: center; font-weight: 700;">
 						<input id="${inputID}" type="checkbox" ${checked}/>
-						<span style="flex-grow: 1">${name}</span>
+						<span style="flex-grow: 1; /*margin-left: 8px;*/">${name}</span>
 						<input id="${colorPickerID}" style="zoom: 0.5" />
 					</label>
 				</li>
