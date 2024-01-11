@@ -482,10 +482,15 @@ body{
 	font-size: 90%;
 	font-weight: 100;
 }
-
+.button-icon{
+	cursor: pointer!important;
+	transition: all .25s ease;
+	transform: scale(1);
+}
 .button-icon:hover{
 	/*background-color:	#09181C;*/
-	filter:				drop-shadow(0px 0px 4px white);
+	/*filter:				drop-shadow(0px 0px 4px white);*/
+	transform: scale(1.1);
 }
 
 /*.ui-widget-content{
@@ -855,11 +860,11 @@ legend{
 
 .jstree-default .jstree-clicked{
 	/*background-color: #ffffff !important;*/
-	background-color: #34494f !important;
+	background-color: #404040!important;
 }
 
 .jstree-default .jstree-hovered{
-	background-color: #34494f !important;
+	background-color: #404040!important;
 }
 
 .jstree-anchor{
@@ -1128,3 +1133,28 @@ input[type="checkbox"] {
 	border-radius: 8px!important;
     overflow: hidden!important;
   }
+ #menu_tools{
+	margin-bottom: -24px!important;
+ }
+ #optMaterial-button{
+	padding: 12px 16px;
+	background: #404040; color: #fff;
+	border: none!important;
+	border-radius: 8px;
+	font-family: 'Montserrat', sans-serif!important;
+	font-weight: 600;
+ }
+ #optMaterial-menu {
+    background: #404040;
+    border-radius: 8px;
+    border: none;
+    margin-top: 4px;
+    color: #fff;
+    padding: 8px;
+}
+#optMaterial-menu > li > .ui-state-active {
+    background: #646464!important;
+    border: none!important;
+    border-radius: 4px!important;
+    color: #fff!important;
+}

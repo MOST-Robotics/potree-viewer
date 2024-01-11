@@ -70265,7 +70265,8 @@ void main() {
 
 		createElement(){
 			const style = `style="position: absolute; top: 10px; right: 10px; z-index: 10000; width: 64px;"`;
-			const img = $(`<img src="${Potree.resourcePath}/images/compas.svg" ${style} />`);
+			const id = `id="live-compass"`
+			const img = $(`<img ${id} src="${Potree.resourcePath}/images/compas.svg" ${style} />`);
 
 			return img;
 		}
@@ -75595,9 +75596,10 @@ ENDSEC
 			let material = pointcloud.material;
 
 			let panel = $(`
-			<div class="scene_content selectable">
+			<div class="scene_content selectable" style="margin-top: -24px">
 				<ul class="pv-menu-list">
 
+				<div style="display: none">
 				<li>
 				<span data-i18n="appearance.point_size"></span>:&nbsp;<span id="lblPointSize"></span> <div id="sldPointSize"></div>
 				</li>
@@ -75631,6 +75633,10 @@ ENDSEC
 				
 				<!-- OPACITY -->
 				<li><span data-i18n="appearance.point_opacity"></span>:<span id="lblOpacity"></span><div id="sldOpacity"></div></li>
+
+
+				</div>
+
 
 				<div class="divider">
 					<span>Attribute</span>
@@ -79325,9 +79331,9 @@ ENDSEC
 
 				elExport.append(`
 				Export: <br>
-				<a href="#" download="measure.json"><img name="geojson_export_button" src="${geoJSONIcon}" class="button-icon" style="height: 24px" /></a>
-				<a href="#" download="measure.dxf"><img name="dxf_export_button" src="${dxfIcon}" class="button-icon" style="height: 24px" /></a>
-				<a href="#" download="potree.json5"><img name="potree_export_button" src="${potreeIcon}" class="button-icon" style="height: 24px" /></a>
+				<a href="#" download="measure.json"><img name="geojson_export_button" src="${geoJSONIcon}" class="button-icon" style="height: 24px; margin-top: 1px" /></a>
+				<a href="#" download="measure.dxf"><img name="dxf_export_button" src="${dxfIcon}" class="button-icon" style="height: 24px; margin-top: 1px" /></a>
+				<a href="#" download="potree.json5"><img name="potree_export_button" src="${potreeIcon}" class="button-icon" style="height: 24px; margin-top: 1px" /></a>
 			`);
 
 				let elDownloadJSON = elExport.find("img[name=geojson_export_button]").parent();
@@ -80445,7 +80451,7 @@ ENDSEC
 			));
 
 
-			elNavigation.append("<br>");
+			/*elNavigation.append("<br>");*/
 
 
 			elNavigation.append(this.createToolIcon(
@@ -80489,7 +80495,7 @@ ENDSEC
 
 
 			let elCameraProjection = $(`
-			<selectgroup id="camera_projection_options">
+			<selectgroup id="camera_projection_options" style="width: 100%; margin-top: 16px">
 				<option id="camera_projection_options_perspective" value="PERSPECTIVE">Perspective</option>
 				<option id="camera_projection_options_orthigraphic" value="ORTHOGRAPHIC">Orthographic</option>
 			</selectgroup>

@@ -23,7 +23,7 @@
 <div> 
 
 	<div id="potree_menu" class="accordion">
-		
+
 		<!-- TOOLS -->
 		<h3 id="menu_tools"><span data-i18n="tb.tools_opt"></span></h3>
 		<div class="pv-menu-list">
@@ -60,9 +60,9 @@
 				</selectgroup>
 			</li>
 			
-			<!--<div class="divider"><span>Navigation</span></div>-->
+			<div class="divider" style="margin-top: 24px!important"><span>Navigation</span></div>
 
-			<li id="navigation"></li>
+			<li id="navigation" style="display: flex; justify-content: space-between; padding-bottom: 8px; flex-wrap: wrap;"></li>
 
 			<li><span data-i18n="appearance.move_speed"></span><!--:--> <span id="lblMoveSpeed"></span><div id="sldMoveSpeed"></div></li>
 			
@@ -77,7 +77,14 @@
 
 			<ul id="classificationList" class="pv-menu-list"></ul>
 
-			<div class="divider"><span>Returns</span></div>
+			<!--<ul class="pv-menu-list">
+				<li>
+					<select id="optMaterial" name="optMaterial" style="display: none;"><option>intensity</option><option>intensity gradient</option><option>return number</option><option>number of returns</option><option>classification flags</option><option>classification</option><option>user data</option><option>scan angle</option><option>point source id</option><option>gps-time</option><option>rgba</option><option>elevation</option><option>color</option><option>matcap</option><option>indices</option><option>level of detail</option><option>composite</option></select>
+					<span tabindex="0" id="optMaterial-button" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="optMaterial-menu" aria-haspopup="true" class="ui-selectmenu-button ui-button ui-widget ui-selectmenu-button-open ui-corner-top" aria-activedescendant="ui-id-12" aria-labelledby="ui-id-12" aria-disabled="false"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">classification</span></span>
+				</li>
+			</ul>-->
+
+			<div class="divider" style="margin-top: -16px"><span>Returns</span></div>
 
 			<div id="return_filter_panel">
 				<ul class="pv-menu-list">
@@ -88,7 +95,6 @@
 				</ul>
 			</div>
 
-			
 			<!--<div class="divider"><span>Point Source ID</span></div>-->
 
 			<div>
@@ -98,7 +104,7 @@
 			</div>
 			
 
-			<div class="divider"><span>GPS Time</span></div>
+			<div class="divider" style="margin-top: -16px"><span>GPS Time</span></div>
 
 			<div id="gpstime_filter_panel">
 
@@ -118,6 +124,22 @@
 				</ul>
 
 			</div>
+		</div>
+
+		<!-- SCENE -->
+		<h3 id="menu_scene"><span data-i18n="tb.scene_opt"></span></h3>
+		<div class="pv-menu-list">
+
+			<div id="scene_export" style="display: flex; align-items: center; gap: 8px"></div>
+
+			<div class="divider"><span>Objects</span></div>
+
+			<div id="scene_objects"></div>
+
+			<!--<div class="divider"><span>Properties</span></div>-->
+
+			<div id="scene_object_properties"></div>
+
 		</div>
 
 		<!-- APPEARANCE -->
@@ -162,21 +184,6 @@
 				
 			</ul>
 			
-		</div>
-
-		<!-- SCENE -->
-		<h3 id="menu_scene"><span data-i18n="tb.scene_opt"></span></h3>
-		<div class="pv-menu-list">
-
-			<div id="scene_export"></div>
-
-			<div class="divider"><span>Objects</span></div>
-
-			<div id="scene_objects"></div>
-
-			<div class="divider"><span>Properties</span></div>
-
-			<div id="scene_object_properties"></div>
 		</div>
 		
 		<!-- ABOUT -->

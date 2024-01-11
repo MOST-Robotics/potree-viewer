@@ -29,10 +29,22 @@ $(document).ready(function(){
 		document.querySelector('[title="Area measurement"]').remove();
 		document.querySelector('[title="Annotation"]').remove();
 
+		//Remove navigations
+		document.querySelector('[title="Fly control"]').remove();
+		document.querySelector('[title="Helicopter control"]').remove();
+		document.querySelector('[title="Full extent"]').remove();
+		document.querySelector('[title="Left view"]').remove();
+		document.querySelector('[title="Righ view"]').remove();
+		document.querySelector('[title="Top view"]').remove();
+		document.querySelector('[title="Bottom view"]').remove();
+		document.querySelector('[title="Back view"]').remove();
+		document.querySelector('[title="Front view"]').remove();
+
 		//Default accordion
 		$(".accordion > div").hide();
 		$("#menu_tools").next().show();
 		$("#menu_filters").next().show();
+		$("#menu_scene").next().show();
 
 		//Remove classifications
 		var classElement = document.querySelectorAll('#classificationList li');
@@ -73,7 +85,7 @@ $(document).ready(function(){
 		document.querySelector('#clipping_tools').remove();
 		document.querySelector('#cliptask_options').remove();
 		document.querySelector('#clipmethod_options').remove();
-		document.querySelector('#navigation').remove();
+		/*document.querySelector('#navigation').remove();*/
 		document.querySelector('#lblMoveSpeed').remove();
 		document.querySelector('#sldMoveSpeed').remove();
 		document.querySelector('[data-i18n="appearance.move_speed"]').remove();
@@ -86,6 +98,11 @@ $(document).ready(function(){
 		//Remove export options
 		document.querySelector('[download="measure.json"]').remove();
 		document.querySelector('[download="potree.json5"]').remove();
+
+		//Enable compass
+		document.querySelector('#live-compass').style.display = "unset";
+
+		document.querySelector('#j1_8_anchor').click();
 
 	}, 100)
 });
