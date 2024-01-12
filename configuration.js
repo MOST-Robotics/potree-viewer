@@ -121,6 +121,9 @@ $(document).ready(function(){
 
 		document.querySelector('#j1_8_anchor').click();
 
+		//Fixes
+		document.querySelector('#inner-panel_measurement').setAttribute('state', 1);
+		document.querySelector('#inner-panel_navigation').setAttribute('state', 1);
 		var sidebar = document.getElementById("potree_sidebar_container");
 		sidebar.scrollTop = 0;
 		
@@ -129,11 +132,21 @@ $(document).ready(function(){
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+
 	document.querySelectorAll('.inner-panel').forEach(panel => {
+
 	  panel.addEventListener('click', function() {
 		// Umschalten des 'state' Attributs
 		const currentState = this.getAttribute('state');
 		this.setAttribute('state', currentState === '0' ? '1' : '0');
 	  });
+
 	});
-  });
+
+	setTimeout(function(){
+		//Fixes
+		document.querySelector('#inner-panel_measurement').setAttribute('state', 1);
+		document.querySelector('#inner-panel_navigation').setAttribute('state', 1);
+	  }, 200);
+
+});
