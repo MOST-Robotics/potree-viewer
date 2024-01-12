@@ -503,7 +503,7 @@ body{
 	cursor:		pointer;
 	margin:		0 .5rem .5rem .5rem;
 	padding:	.75rem 1.5rem;
-	border-radius: .25rem;
+	border-radius: .5rem;
 	/*border:		1px solid black;*/
 	/*box-shadow:	0px 3px 3px #111;*/
 	/*text-shadow:	1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
@@ -1068,7 +1068,7 @@ input[type="checkbox"] {
 	font-size: 14px;
 	font-weight: 600;
 	font-family: "Montserrat", sans-serif;
-	max-width: 120px;
+	max-width: 80px;
   }
 
   .sp-dd{
@@ -1154,4 +1154,44 @@ input[type="checkbox"] {
     border: none!important;
     border-radius: 4px!important;
     color: #fff!important;
+}
+.inner-panel{
+	background: #242424;
+	border-radius: 12px!important;
+	padding: 16px;
+	margin-left: 12px; margin-right: 12px; margin-bottom: 8px;
+	overflow: hidden;
+	transition: all .5s cubic-bezier(0, .5, .5, 1);
+}
+.inner-panel[state="0"]{
+	max-height: 20px!important;
+	transition: all .5s cubic-bezier(0, .5, .5, 1);
+}
+.inner-panel[state="1"]{
+	max-height: 360px!important;
+	transition: all .5s cubic-bezier(0, .5, .5, 1);
+}
+.inner-panel .pv-menu-list{
+	margin: 0!important;
+}
+.inner-panel .pv-menu-list > div{
+	margin: 0!important;
+}
+.inner-panel li{
+	margin: 8px 0!important;
+}
+.inner-panel h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 12px; margin-top: 0!important;
+}
+.inner-panel .ui-slider{
+	margin-left: 12px; margin-right: 12px;
+}
+.pv-menu-list li{
+	margin-bottom: 0!important;
+}
+.pv-menu-list{
+	margin: 0!important;
 }

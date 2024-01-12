@@ -100,6 +100,8 @@ $(document).ready(function(){
 		document.querySelector('#clipping_tools').remove();
 		document.querySelector('#cliptask_options').remove();
 		document.querySelector('#clipmethod_options').remove();
+		document.querySelector('#pointsourceid_filter_panel').remove();
+
 		/*document.querySelector('#navigation').remove();*/
 		document.querySelector('#lblMoveSpeed').remove();
 		document.querySelector('#sldMoveSpeed').remove();
@@ -119,5 +121,19 @@ $(document).ready(function(){
 
 		document.querySelector('#j1_8_anchor').click();
 
+		var sidebar = document.getElementById("potree_sidebar_container");
+		sidebar.scrollTop = 0;
+		
 	}, 200)
+
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelectorAll('.inner-panel').forEach(panel => {
+	  panel.addEventListener('click', function() {
+		// Umschalten des 'state' Attributs
+		const currentState = this.getAttribute('state');
+		this.setAttribute('state', currentState === '0' ? '1' : '0');
+	  });
+	});
+  });

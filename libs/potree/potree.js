@@ -90372,8 +90372,6 @@ ENDSEC
 				elGroup.empty();
 				elGroup.append(elFieldset);
 
-
-
 			}
 		});
 	})(jQuery);
