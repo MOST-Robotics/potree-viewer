@@ -63,6 +63,19 @@ import {
 	sRGBEncoding
 } from '../build/three.module.js';
 
+model.traverse((mesh) => {
+	if (!mesh.isMesh) return;
+
+	var oldMaterial = mesh.material;
+
+	mesh.material = new THREE.MeshPhongMaterial();
+
+	THREE.MeshBasicMaterial.prototype.copy.call(
+	  mesh.material,
+	  oldMaterial
+	);
+  });
+
 var GLTFLoader = ( function () {
 
 	function GLTFLoader( manager ) {

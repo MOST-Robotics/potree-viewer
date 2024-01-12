@@ -5,7 +5,22 @@ viewer.setFOV(60);
 viewer.setPointBudget(2_500_000);
 viewer.setEDLRadius(1.0);
 viewer.setEDLStrength(0.2);
-viewer.useHQ = true;
+
+//viewer.useHQ = true;
+function checkDeviceType() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return 'mobile';
+    } else {
+        return 'desktop';
+    }
+}
+if (checkDeviceType() === 'desktop') {
+    viewer.useHQ = true;
+}else{
+	viewer.useHQ = false;
+}
 
 viewer.loadSettingsFromURL();
 viewer.setDescription();
@@ -104,5 +119,5 @@ $(document).ready(function(){
 
 		document.querySelector('#j1_8_anchor').click();
 
-	}, 100)
+	}, 200)
 });
