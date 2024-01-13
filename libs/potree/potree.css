@@ -1249,7 +1249,46 @@ input[type="checkbox"] {
 }
 /* font size*/
 h3{
-	font-size: 14px!important;}
+	font-size: 14px!important;
+}
 h3 span{
 	font-size: 14px!important;
+	display: flex;
+}
+
+/* Icons */
+span[data-i18n="tb.tools_opt"]::before{
+	content: "\f7d9";
+	position: relative;
+	margin: 0px 10px 0px -10px; text-align: center;
+	left: 0; height: 16px; width: 16px;
+	font-family: 'FontAwesome'; font-size: 16px; line-height: 16px;
+}
+span[data-i18n="tb.filters_opt"]::before{
+	content: "\f0b0";
+	position: relative;
+	margin: 0px 10px 0px -10px; text-align: center;
+	left: 0; height: 16px; width: 16px;
+	font-family: 'FontAwesome'; font-size: 16px; line-height: 16px;
+}
+span[data-i18n="tb.scene_opt"]::before{
+	content: "\f6fc";
+	position: relative;
+	margin: 0px 10px 0px -10px; text-align: center;
+	left: 0; height: 16px; width: 16px;
+	font-family: 'FontAwesome'; font-size: 16px; line-height: 16px;
+}
+span[data-i18n="tb.rendering_opt"]::before{
+	content: "\f1de";
+	position: relative;
+	margin: 0px 10px 0px -10px; text-align: center;
+	left: 0; height: 16px; width: 16px;
+	font-family: 'FontAwesome'; font-size: 16px; line-height: 16px;
+}
+span[data-i18n="tb.about_opt"]::before{
+	content: "\f129";
+	position: relative;
+	margin: 0px 10px 0px -10px; text-align: center;
+	left: 0; height: 16px; width: 16px;
+	font-family: 'FontAwesome'; font-size: 16px; line-height: 16px;
 }
