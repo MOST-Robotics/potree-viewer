@@ -88951,12 +88951,15 @@ ENDSEC
 
 		toggleSidebar () {
 			let renderArea = $('#potree_render_area');
+			let sidebarContainer = $('#potree_sidebar_container');
 			let isVisible = renderArea.css('left') !== '0px';
 
 			if (isVisible) {
 				renderArea.css('left', '0px');
+				sidebarContainer.css('margin-left', '-320px');
 			} else {
-				renderArea.css('left', '300px');
+				renderArea.css('left', '320px');
+				sidebarContainer.css('margin-left', '0px');
 			}
 		};
 
@@ -88998,7 +89001,7 @@ ENDSEC
 			let viewer = this;
 			let sidebarContainer = $('#potree_sidebar_container');
 			sidebarContainer.load(new URL(Potree.scriptPath + '/sidebar.html').href, () => {
-				sidebarContainer.css('width', '300px');
+				sidebarContainer.css('width', '320px');
 				sidebarContainer.css('height', '100%');
 
 				let imgMenuToggle = document.createElement('img');
