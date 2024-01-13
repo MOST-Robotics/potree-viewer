@@ -118,6 +118,15 @@ $(document).ready(function(){
 
 		//Enable compass
 		document.querySelector('#live-compass').style.display = "unset";
+
+		//Set inner-panel states
+		document.querySelector('#inner-panel_navigation').setAttribute('state', 1);
+		document.querySelector('#inner-panel_measurement').setAttribute('state', 0);
+		document.querySelector('#inner-panel_classification').setAttribute('state', 1);
+		document.querySelector('#inner-panel_returns').setAttribute('state', 0);
+		document.querySelector('#inner-panel_gpstime').setAttribute('state', 0);
+		document.querySelector('#inner-panel_objects').setAttribute('state', 1);
+		document.querySelector('#inner-panel_properties').setAttribute('state', 1);
 		
 	}, 200)
 
@@ -148,10 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			li.parentNode.removeChild(li);
 		}
 		});
-
-		//Set inner-panel states
-		document.querySelector('#inner-panel_measurement').setAttribute('state', 1);
-		document.querySelector('#inner-panel_navigation').setAttribute('state', 1);
 
 		//Select elements
 		document.querySelector('#j1_8_anchor').click();
