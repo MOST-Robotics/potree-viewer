@@ -29,27 +29,29 @@
 
 		<div class="pv-menu-list">
 
+			<!--<div class="divider" style="margin-top: 24px!important"><span>Navigation</span></div>-->
+			<div id="inner-panel_navigation" class="inner-panel" state="0">
+				<h3>Navigation</h3>
+				<li id="navigation" style="display: flex; justify-content: space-between; flex-wrap: wrap;"></li>
+				<li><span data-i18n="appearance.move_speed"></span><span id="lblMoveSpeed"></span><div id="sldMoveSpeed"></div></li>
+			</div>
+			<!--:-->
+
 			<!--<div class="divider"><span>Measurement</span></div>-->
-
-			<div id="inner-panel_measurement" class="inner-panel" state="1">
-
+			<div id="inner-panel_measurement" class="inner-panel" state="0" style="margin-bottom: 16px!important">
 				<h3>Measurement</h3>
 				<li id="tools" style="display: flex;justify-content: space-between;padding-bottom: 8px;"></li>
-
 				<li>
 					<selectgroup id="measurement_options_show">
 						<option id="measurement_options_show_yes" value="SHOW">Show</option>
 						<option id="measurement_options_show_no" value="HIDE">Hide</option>
 					</selectgroup>
 				</li>
-
 			</div>
 
 			
 			<!--<div class="divider"><span>Clipping</span></div>-->
-
 			<li id="clipping_tools"></li>
-
 			<li>
 				<selectgroup id="cliptask_options">
 					<option id="cliptask_options_none" value="NONE">None</option>
@@ -58,23 +60,12 @@
 					<option id="cliptask_options_show_outside" value="SHOW_OUTSIDE">Outside</option>
 				</selectgroup>
 			</li>
-
 			<li>
 				<selectgroup id="clipmethod_options">
 					<option id="clipmethod_options_any" value="INSIDE_ANY">Inside Any</option>
 					<option id="clipmethod_options_all" value="INSIDE_ALL">Inside All</option>
 				</selectgroup>
 			</li>
-
-			<!--<div class="divider" style="margin-top: 24px!important"><span>Navigation</span></div>-->
-
-			<div id="inner-panel_navigation" class="inner-panel" state="1" style="margin-bottom: 24px!important">
-				<h3>Navigation</h3>
-				<li id="navigation" style="display: flex; justify-content: space-between; flex-wrap: wrap;"></li>
-				<li><span data-i18n="appearance.move_speed"></span><span id="lblMoveSpeed"></span><div id="sldMoveSpeed"></div></li>
-			</div>
-			<!--:-->
-
 		</div>
 
 		<!-- Classification -->
@@ -83,15 +74,14 @@
 
 			<!--<div class="divider"><span>Classification</span></div>-->
 
-			<div class="inner-panel" state="1">
+			<div id="inner-panel_classification" class="inner-panel" state="0">
 				<h3>Classification</h3>
 				<ul id="classificationList" class="pv-menu-list"></ul>	
 			</div>
 			
 
 			<!--<div class="divider" style="margin-top: -16px"><span>Returns</span></div>-->
-
-			<div class="inner-panel" state="1">
+			<div id="inner-panel_returns" class="inner-panel" state="0">
 				<h3>Returns</h3>
 				<div id="return_filter_panel">
 					<ul class="pv-menu-list">
@@ -104,22 +94,17 @@
 			</div>
 
 			<!--<div class="divider"><span>Point Source ID</span></div>-->
-
 			<div>
 				<ul class="pv-menu-list" id="pointsourceid_filter_panel">
 				</ul>
 			</div>
-			
 
 			<!--<div class="divider" style="margin-top: -16px"><span>GPS Time</span></div>-->
-
-			<div class="inner-panel" state="1" style="margin-bottom: 24px!important">
+			<div id="inner-panel_gpstime" class="inner-panel" state="0" style="margin-bottom: 16px!important">
 				<h3>GPS Time</h3>
 				<div id="gpstime_filter_panel">
-
 					<ul class="pv-menu-list">
 						<div id="gpstime_multilevel_range_container">
-
 							<li>
 								<span style="display: flex; align-items: center; flex-grow: 1">
 									<span>Time: </span>
@@ -127,11 +112,8 @@
 									<input id="btnFindGpsTime" type="button" value="find" />
 								</span>
 							</li>
-
 						</div>
-
 					</ul>
-
 				</div>
 			</div>
 
@@ -139,18 +121,23 @@
 
 		<!-- SCENE -->
 		<h3 id="menu_scene"><span data-i18n="tb.scene_opt"></span></h3>
+
 		<div class="pv-menu-list">
 
-			<div id="scene_export" style="display: flex; align-items: center; gap: 8px"></div>
+			<div id="scene_export"></div>	
 
-			<div class="divider"><span>Objects</span></div>
-
-			<div id="scene_objects"></div>
+			<!--<div class="divider"><span>Objects</span></div>-->
+			<div id="inner-panel_objects" class="inner-panel" state="0">
+				<h3>Objects</h3>
+				<div id="scene_objects"></div>
+			</div>
 
 			<!--<div class="divider"><span>Properties</span></div>-->
-
-			<div id="scene_object_properties"></div>
-
+			<div id="inner-panel_properties" class="inner-panel" state="0" style="margin-bottom: 16px!important">
+				<h3>Properties</h3>
+				<div id="scene_object_properties"></div>
+			</div>
+			
 		</div>
 
 		<!-- APPEARANCE -->
