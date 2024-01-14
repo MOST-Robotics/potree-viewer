@@ -1324,6 +1324,24 @@ span[data-i18n="tb.about_opt"]::before{
 	margin-left: 24px!important;
 }
 
+#about_container{
+	position: relative;
+    background: #242424;
+    border-radius: 12px !important;
+    padding: 12px!important;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 6px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+    color: #fff;
+	font-size: 12px!important; line-height: 18px!important;
+}
+#about_container li{
+	margin: 0!important; padding: 0!important;
+}
+
 .propertie_section .ui-slider{
 	/*margin-left: 0px!important;
 	margin-right: 0px!important;*/
