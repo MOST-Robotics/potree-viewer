@@ -132,7 +132,7 @@ $(document).ready(function(){
 		document.querySelector('#inner-panel_EDL').setAttribute('state', 0);
 		document.querySelector('#inner-panel_background').setAttribute('state', 0);
 		
-	}, 200)
+	}, 250)
 
 });
 
@@ -169,6 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		var sidebar = document.getElementById("potree_sidebar_container");
 		sidebar.scrollTop = 0;
 
-	  }, 250);
+	  }, 500);
 
 });
