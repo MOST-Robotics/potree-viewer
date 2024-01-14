@@ -5,6 +5,10 @@ viewer.setFOV(60);
 viewer.setPointBudget(2_500_000);
 viewer.setEDLRadius(1.0);
 viewer.setEDLStrength(0.2);
+viewer.setBackground("none");
+viewer.setRGBGamma(1.35);
+viewer.setRGBContrast(0.1);
+viewer.setRGBBrightness(0.2);
 
 //viewer.useHQ = true;
 function checkDeviceType() {
@@ -41,7 +45,7 @@ $(document).ready(function(){
 		document.querySelector('[title="Point measurement"]').remove();
 		document.querySelector('[title="Circle measurement"]').remove();
 		document.querySelector('[data-i18n="Azimuth"]').remove();
-		document.querySelector('[title="Area measurement"]').remove();
+		document.querySelector('[title="Volume measurement"]').remove();
 		document.querySelector('[title="Annotation"]').remove();
 
 		//Remove navigations
@@ -117,7 +121,7 @@ $(document).ready(function(){
 		document.querySelector('[download="potree.json5"]').remove();
 
 		//Enable compass
-		document.querySelector('#live-compass').style.display = "unset";
+		//document.querySelector('#live-compass').style.display = "unset";
 
 		//Set inner-panel states
 		document.querySelector('#inner-panel_navigation').setAttribute('state', 1);
