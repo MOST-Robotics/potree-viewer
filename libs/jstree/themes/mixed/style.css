@@ -297,9 +297,9 @@
   transition: background-color 0.15s, box-shadow 0.15s;
 }
 .jstree-default .jstree-hovered {
-  background: #e7f4f9;
-  border-radius: 2px;
-  box-shadow: inset 0 0 1px #cccccc;
+  background: #404040;
+  border-radius: 4px;
+  /*box-shadow: inset 0 0 1px #cccccc;*/
 }
 .jstree-default .jstree-context {
   background: #e7f4f9;
@@ -307,9 +307,9 @@
   box-shadow: inset 0 0 1px #cccccc;
 }
 .jstree-default .jstree-clicked {
-  background: #beebff;
-  border-radius: 2px;
-  box-shadow: inset 0 0 1px #999999;
+  background: #404040;
+  border-radius: 4px;
+  /*box-shadow: inset 0 0 1px #999999;*/
 }
 .jstree-default .jstree-no-icons .jstree-anchor > .jstree-themeicon {
   display: none;
@@ -388,6 +388,7 @@
 .jstree-default .jstree-anchor {
   line-height: 24px;
   height: 24px;
+  margin: 1px; padding: 1px;
 }
 .jstree-default .jstree-icon {
   width: 24px;
