@@ -7,6 +7,12 @@ viewer.setEDLRadius(1.0);
 viewer.setEDLStrength(0.2);
 viewer.setBackground("none");
 
+viewer.scene.pointclouds.forEach(pointcloud => {
+    pointcloud.material.rgbGamma = 1.5;
+    //pointcloud.material.rgbBrightness = neueHelligkeit;
+    //pointcloud.material.rgbContrast = neuerKontrast;
+});
+
 //viewer.useHQ = true;
 function checkDeviceType() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -42,8 +48,13 @@ $(document).ready(function(){
 		document.querySelector('[title="Point measurement"]').remove();
 		document.querySelector('[title="Circle measurement"]').remove();
 		document.querySelector('[data-i18n="Azimuth"]').remove();
-		document.querySelector('[title="Volume measurement"]').remove();
 		document.querySelector('[title="Annotation"]').remove();
+		//document.querySelector('[title="Volume measurement"]').remove();
+		document.querySelectorAll('[src*="sphere_distances"]').forEach(function(el) {
+			if (el.src.includes("sphere_distances")) {
+				el.remove();
+			}
+		});
 
 		//Remove navigations
 		document.querySelector('[title="Fly control"]').remove();

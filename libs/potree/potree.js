@@ -59186,9 +59186,9 @@ void main() {
 				// intensityGamma:		{ type: "f", value: 1 },
 				// intensityContrast:	{ type: "f", value: 0 },
 				// intensityBrightness:{ type: "f", value: 0 },
-				// rgbGamma:			{ type: "f", value: 1 },
-				// rgbContrast:		{ type: "f", value: 0 },
-				// rgbBrightness:		{ type: "f", value: 0 },
+				// rgbGamma:			{ type: "f", value: 1.35 },
+				// rgbContrast:		{ type: "f", value: 0.2 },
+				// rgbBrightness:		{ type: "f", value: 0.1 },
 				wRGB:				{ type: "f", value: 1 },
 				wIntensity:			{ type: "f", value: 0 },
 				wElevation:			{ type: "f", value: 0 },
@@ -79062,7 +79062,7 @@ ENDSEC
 		createToolIcon(icon, title, callback){
 			let element = $(`
 			<img src="${icon}"
-				style="width: 40px; height: 40px"
+				style="width: 32px; height: 32px"
 				class="button-icon"
 				data-i18n="${title}" />
 		`);
