@@ -127,6 +127,9 @@ $(document).ready(function(){
 		document.querySelector('#inner-panel_gpstime').setAttribute('state', 0);
 		document.querySelector('#inner-panel_objects').setAttribute('state', 1);
 		document.querySelector('#inner-panel_properties').setAttribute('state', 1);
+		document.querySelector('#inner-panel_points').setAttribute('state', 1);
+		document.querySelector('#inner-panel_EDL').setAttribute('state', 0);
+		document.querySelector('#inner-panel_background').setAttribute('state', 0);
 		
 	}, 200)
 
