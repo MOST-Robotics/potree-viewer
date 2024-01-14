@@ -6,9 +6,6 @@ viewer.setPointBudget(2_500_000);
 viewer.setEDLRadius(1.0);
 viewer.setEDLStrength(0.2);
 viewer.setBackground("none");
-viewer.setRGBGamma(1.35);
-viewer.setRGBContrast(0.1);
-viewer.setRGBBrightness(0.2);
 
 //viewer.useHQ = true;
 function checkDeviceType() {
