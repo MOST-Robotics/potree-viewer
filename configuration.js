@@ -5,6 +5,13 @@ viewer.setFOV(60);
 viewer.setPointBudget(2_500_000);
 viewer.setEDLRadius(1.0);
 viewer.setEDLStrength(0.2);
+viewer.setBackground("none");
+
+viewer.scene.pointclouds.forEach(pointcloud => {
+    pointcloud.material.rgbGamma = 1.5;
+    //pointcloud.material.rgbBrightness = neueHelligkeit;
+    //pointcloud.material.rgbContrast = neuerKontrast;
+});
 
 //viewer.useHQ = true;
 function checkDeviceType() {
@@ -41,8 +48,13 @@ $(document).ready(function(){
 		document.querySelector('[title="Point measurement"]').remove();
 		document.querySelector('[title="Circle measurement"]').remove();
 		document.querySelector('[data-i18n="Azimuth"]').remove();
-		document.querySelector('[title="Area measurement"]').remove();
 		document.querySelector('[title="Annotation"]').remove();
+		//document.querySelector('[title="Volume measurement"]').remove();
+		document.querySelectorAll('[src*="sphere_distances"]').forEach(function(el) {
+			if (el.src.includes("sphere_distances")) {
+				el.remove();
+			}
+		});
 
 		//Remove navigations
 		document.querySelector('[title="Fly control"]').remove();
@@ -117,23 +129,57 @@ $(document).ready(function(){
 		document.querySelector('[download="potree.json5"]').remove();
 
 		//Enable compass
-		document.querySelector('#live-compass').style.display = "unset";
+		//document.querySelector('#live-compass').style.display = "unset";
 
-		document.querySelector('#j1_8_anchor').click();
-
-		var sidebar = document.getElementById("potree_sidebar_container");
-		sidebar.scrollTop = 0;
+		//Set inner-panel states
+		document.querySelector('#inner-panel_navigation').setAttribute('state', 1);
+		document.querySelector('#inner-panel_measurement').setAttribute('state', 0);
+		document.querySelector('#inner-panel_classification').setAttribute('state', 1);
+		document.querySelector('#inner-panel_returns').setAttribute('state', 0);
+		document.querySelector('#inner-panel_gpstime').setAttribute('state', 0);
+		document.querySelector('#inner-panel_objects').setAttribute('state', 1);
+		document.querySelector('#inner-panel_properties').setAttribute('state', 1);
+		document.querySelector('#inner-panel_points').setAttribute('state', 1);
+		document.querySelector('#inner-panel_EDL').setAttribute('state', 0);
+		document.querySelector('#inner-panel_background').setAttribute('state', 0);
 		
-	}, 200)
+	}, 250)
 
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-	document.querySelectorAll('.inner-panel').forEach(panel => {
-	  panel.addEventListener('click', function() {
-		// Umschalten des 'state' Attributs
-		const currentState = this.getAttribute('state');
-		this.setAttribute('state', currentState === '0' ? '1' : '0');
+
+	//inner-panel function
+	document.querySelectorAll('.inner-panel h3').forEach(h3 => {
+		h3.addEventListener('click', function() {
+		  // Finde das übergeordnete Panel-Element
+		  const panel = this.closest('.inner-panel');
+		  if (panel) {
+			// Umschalten des 'state' Attributs
+			const currentState = panel.getAttribute('state');
+			panel.setAttribute('state', currentState === '0' ? '1' : '0');
+		  }
+		});
 	  });
-	});
-  });
+
+	//Fixes
+	setTimeout(function(){
+
+		//Remove empty <li></li> elements
+		var listItems = document.querySelectorAll('li');
+		listItems.forEach(function(li) {
+		if (!li.hasChildNodes()) {
+			li.parentNode.removeChild(li);
+		}
+		});
+
+		//Select elements
+		document.querySelector('#j1_8_anchor').click();
+
+		//Scroll to top
+		var sidebar = document.getElementById("potree_sidebar_container");
+		sidebar.scrollTop = 0;
+
+	  }, 500);
+
+});

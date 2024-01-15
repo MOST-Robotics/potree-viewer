@@ -53871,7 +53871,7 @@
 			this.maxMarkers = Number.MAX_SAFE_INTEGER;
 
 			this.sphereGeometry = new SphereGeometry(0.4, 10, 10);
-			this.color = new Color(0xff0000);
+			this.color = new Color(0xfaca30);
 
 			this.spheres = [];
 			this.edges = [];
@@ -59186,9 +59186,9 @@ void main() {
 				// intensityGamma:		{ type: "f", value: 1 },
 				// intensityContrast:	{ type: "f", value: 0 },
 				// intensityBrightness:{ type: "f", value: 0 },
-				// rgbGamma:			{ type: "f", value: 1 },
-				// rgbContrast:		{ type: "f", value: 0 },
-				// rgbBrightness:		{ type: "f", value: 0 },
+				// rgbGamma:			{ type: "f", value: 1.35 },
+				// rgbContrast:		{ type: "f", value: 0.2 },
+				// rgbBrightness:		{ type: "f", value: 0.1 },
 				wRGB:				{ type: "f", value: 1 },
 				wIntensity:			{ type: "f", value: 0 },
 				wElevation:			{ type: "f", value: 0 },
@@ -75637,16 +75637,19 @@ ENDSEC
 
 				</div>
 
-
+				<!--
 				<div class="divider">
 					<span>Attribute</span>
 				</div>
+				-->
+				<h4>Attribute</h4>
 
 				<li>
 					<select id="optMaterial" name="optMaterial"></select>
 				</li>
 
-				<div id="materials.composite_weight_container">
+				<div id="materials.composite_weight_container" class="propertie_section">
+					
 					<div class="divider">
 						<span>Attribute Weights</span>
 					</div>
@@ -75659,17 +75662,21 @@ ENDSEC
 					<li>Source ID: <span id="lblWeightSourceID"></span> <div id="sldWeightSourceID"></div>	</li>
 				</div>
 
-				<div id="materials.rgb_container">
+				<div id="materials.rgb_container" class="propertie_section">
+
+					<!--
 					<div class="divider">
 						<span>RGB</span>
 					</div>
+					-->
+					<h4 style="margin-top: 16px!important;">Settings</h4>
 
 					<li>Gamma: <span id="lblRGBGamma"></span> <div id="sldRGBGamma"></div>	</li>
-					<li>Brightness: <span id="lblRGBBrightness"></span> <div id="sldRGBBrightness"></div>	</li>
+					<li>Brightness: <span id="lblRGBBrightness"></span> <div id="sldRGBBrightness"></div></li>
 					<li>Contrast: <span id="lblRGBContrast"></span> <div id="sldRGBContrast"></div>	</li>
 				</div>
 
-				<div id="materials.extra_container">
+				<div id="materials.extra_container" class="propertie_section">
 					<div class="divider">
 						<span>Extra Attribute</span>
 					</div>
@@ -75681,7 +75688,7 @@ ENDSEC
 					<li>Contrast: <span id="lblExtraContrast"></span> <div id="sldExtraContrast"></div></li>
 				</div>
 				
-				<div id="materials.matcap_container">
+				<div id="materials.matcap_container" class="propertie_section">
 					<div class="divider">
 						<span>MATCAP</span>
 					</div>
@@ -75691,7 +75698,7 @@ ENDSEC
 					</li>
 				</div>
 
-				<div id="materials.color_container">
+				<div id="materials.color_container" class="propertie_section">
 					<div class="divider">
 						<span>Color</span>
 					</div>
@@ -75700,7 +75707,7 @@ ENDSEC
 				</div>
 
 
-				<div id="materials.elevation_container">
+				<div id="materials.elevation_container" class="propertie_section">
 					<div class="divider">
 						<span>Elevation</span>
 					</div>
@@ -75722,7 +75729,7 @@ ENDSEC
 					</li>
 				</div>
 
-				<div id="materials.transition_container">
+				<div id="materials.transition_container" class="propertie_section">
 					<div class="divider">
 						<span>Transition</span>
 					</div>
@@ -75730,7 +75737,7 @@ ENDSEC
 					<li>transition: <span id="lblTransition"></span> <div id="sldTransition"></div>	</li>
 				</div>
 
-				<div id="materials.intensity_container">
+				<div id="materials.intensity_container" class="propertie_section">
 					<div class="divider">
 						<span>Intensity</span>
 					</div>
@@ -75741,14 +75748,14 @@ ENDSEC
 					<li>Contrast: <span id="lblIntensityContrast"></span> <div id="sldIntensityContrast"></div>	</li>
 				</div>
 
-				<div id="materials.gpstime_container">
+				<div id="materials.gpstime_container" class="propertie_section">
 					<div class="divider">
 						<span>GPS Time</span>
 					</div>
 
 				</div>
 				
-				<div id="materials.index_container">
+				<div id="materials.index_container" class="propertie_section">
 					<div class="divider">
 						<span>Indices</span>
 					</div>
@@ -79055,7 +79062,7 @@ ENDSEC
 		createToolIcon(icon, title, callback){
 			let element = $(`
 			<img src="${icon}"
-				style="width: 40px; height: 40px"
+				style="width: 32px; height: 32px"
 				class="button-icon"
 				data-i18n="${title}" />
 		`);
@@ -79332,7 +79339,7 @@ ENDSEC
 				elExport.append(`
 				Export: <br>
 				<a href="#" download="measure.json"><img name="geojson_export_button" src="${geoJSONIcon}" class="button-icon" style="height: 24px; margin-top: 1px" /></a>
-				<a href="#" download="measure.dxf"><img name="dxf_export_button" src="${dxfIcon}" class="button-icon" style="height: 24px; margin-top: 1px" /></a>
+				<a href="#" download="measure.dxf"><img name="dxf_export_button" src="${dxfIcon}" class="button-icon" style="height: 20px; margin-top: 4px" /></a>
 				<a href="#" download="potree.json5"><img name="potree_export_button" src="${potreeIcon}" class="button-icon" style="height: 24px; margin-top: 1px" /></a>
 			`);
 
@@ -87329,7 +87336,7 @@ ENDSEC
 					]);
 
 					let lineMaterial = new LineMaterial({ 
-						color: 0xff0000, 
+						color: 0xff0000,
 						linewidth: 2, 
 						resolution:  new Vector2(1000, 1000),
 					});
@@ -88944,12 +88951,15 @@ ENDSEC
 
 		toggleSidebar () {
 			let renderArea = $('#potree_render_area');
+			let sidebarContainer = $('#potree_sidebar_container');
 			let isVisible = renderArea.css('left') !== '0px';
 
 			if (isVisible) {
 				renderArea.css('left', '0px');
+				sidebarContainer.css('margin-left', '-320px');
 			} else {
-				renderArea.css('left', '300px');
+				renderArea.css('left', '320px');
+				sidebarContainer.css('margin-left', '0px');
 			}
 		};
 
@@ -88991,7 +89001,7 @@ ENDSEC
 			let viewer = this;
 			let sidebarContainer = $('#potree_sidebar_container');
 			sidebarContainer.load(new URL(Potree.scriptPath + '/sidebar.html').href, () => {
-				sidebarContainer.css('width', '300px');
+				sidebarContainer.css('width', '320px');
 				sidebarContainer.css('height', '100%');
 
 				let imgMenuToggle = document.createElement('img');
