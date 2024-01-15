@@ -16,7 +16,7 @@
     position: absolute;
     top: 50%; left: 50%;
     /* transform: translate(-50%, -50%); */
-    z-index: 1000;
+    z-index: 500;
     width: 340px; height: auto;
     background: #242424;
     border-radius: 16px;
