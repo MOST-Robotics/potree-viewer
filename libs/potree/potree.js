@@ -53870,8 +53870,8 @@
 			this._showAzimuth = false;
 			this.maxMarkers = Number.MAX_SAFE_INTEGER;
 
-			this.sphereGeometry = new SphereGeometry(0.4, 10, 10);
-			this.color = new Color(0xfaca30);
+			this.sphereGeometry = new SphereGeometry(0.4, 20, 20);
+			this.color = new Color(0xff0000);
 
 			this.spheres = [];
 			this.edges = [];
