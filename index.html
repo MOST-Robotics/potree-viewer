@@ -20,7 +20,7 @@
 <body>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<div id="loaderPopup"><lottie-player src="https://lottie.host/35121da5-e0b3-4063-808e-f4e64db99e13/ts0YewjQik.json" style="width: 160px; height: 160px" background="#00000000" speed="1" direction="1" mode="normal" loop="" autoplay=""></lottie-player></div>
-	
+
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NVT8FY8RZ4"></script>
 	<script>
@@ -78,17 +78,18 @@
 			let pointcloud = e.pointcloud;
 			
 			let material = pointcloud.material;
+			material.rgbGamma = 1.35;
+			material.rgbBrightness = 0.1;
+			material.rgbContrast = 0.2;
 			material.size = 1;
 			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
+			material.shape = Potree.PointShape.CIRCLE;
 			material.activeAttributeName = "rgba";
 			
 			scene.addPointCloud(pointcloud);
 			
 			viewer.fitToScreen();
 		});
-
-		
 		
 	</script>
 	

@@ -2,16 +2,10 @@ window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"))
 
 viewer.setEDLEnabled(true);
 viewer.setFOV(60);
-viewer.setPointBudget(2_500_000);
+viewer.setPointBudget(5_000_000);
 viewer.setEDLRadius(1.0);
 viewer.setEDLStrength(0.2);
 viewer.setBackground("none");
-
-viewer.scene.pointclouds.forEach(pointcloud => {
-    pointcloud.material.rgbGamma = 1.5;
-    //pointcloud.material.rgbBrightness = neueHelligkeit;
-    //pointcloud.material.rgbContrast = neuerKontrast;
-});
 
 //viewer.useHQ = true;
 function checkDeviceType() {
@@ -41,6 +35,19 @@ viewer.loadGUI(() => {
 });
 
 $(document).ready(function(){
+
+	//inner-panel function
+	document.querySelectorAll('.inner-panel h3').forEach(h3 => {
+		h3.addEventListener('click', function() {
+		// Finde das übergeordnete Panel-Element
+		const panel = this.closest('.inner-panel');
+			if (panel) {
+				// Umschalten des 'state' Attributs
+				const currentState = panel.getAttribute('state');
+				panel.setAttribute('state', currentState === '0' ? '1' : '0');
+			}
+		});
+	});
 
 	setTimeout(function(){
 
@@ -177,18 +184,5 @@ $(document).ready(function(){
 	  setTimeout(function(){
 		document.querySelector('#loaderPopup').remove();
 	  }, 1250);
-
-	//inner-panel function
-	document.querySelectorAll('.inner-panel h3').forEach(h3 => {
-		h3.addEventListener('click', function() {
-		  // Finde das übergeordnete Panel-Element
-		  const panel = this.closest('.inner-panel');
-		  if (panel) {
-			// Umschalten des 'state' Attributs
-			const currentState = panel.getAttribute('state');
-			panel.setAttribute('state', currentState === '0' ? '1' : '0');
-		  }
-		});
-	  });
 
 });
