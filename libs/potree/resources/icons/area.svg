@@ -1,99 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_6);
+      }
 
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="32px"
-   height="32px"
-   id="svg3797"
-   version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="area.svg"
-   inkscape:export-filename="D:\dev\workspaces\potree\develop\resources\icons\area.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
-  <defs
-     id="defs3799" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="15.836083"
-     inkscape:cx="-2.4229598"
-     inkscape:cy="11.830286"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:grid-bbox="true"
-     inkscape:document-units="px"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1">
-    <inkscape:grid
-       type="xygrid"
-       id="grid3805" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata3802">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     id="layer1"
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer">
-    <path
-       style="fill:#e73100;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 7.0000003,25.75 H 25 l -5,-10 6,-9.9999996 H 7.0000003 Z"
-       id="path3790"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
-    <circle
-       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3807-0-1"
-       cx="7"
-       cy="26"
-       r="2.7499998" />
-    <circle
-       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3807-0-7"
-       cx="25"
-       cy="26"
-       r="2.7499998" />
-    <circle
-       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3807-0-7-0"
-       cx="7"
-       cy="6.000001"
-       r="2.7499998" />
-    <circle
-       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3807-0-7-9"
-       cx="26"
-       cy="6.000001"
-       r="2.7499998" />
-    <circle
-       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path3807-0-7-4"
-       cx="20"
-       cy="16"
-       r="2.7499998" />
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
+        stroke-width: 8px;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
+        fill: #c80032;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_6-2);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_6-5);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_6-3);
+      }
+
+      .cls-5 {
+        fill: #ececec;
+        stroke-width: 10px;
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_6-4);
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" cx="106.98" cy="102.97" fx="61.52" fy="94.14" r="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#faca30"/>
+      <stop offset=".27" stop-color="#f9c62a"/>
+      <stop offset=".61" stop-color="#f9bb1b"/>
+      <stop offset=".98" stop-color="#f9a901"/>
+      <stop offset="1" stop-color="#f9a800"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" cx="406" fx="360.54" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-3" data-name="Unbenannter Verlauf 6" cx="310.9" cy="256" fx="265.44" fy="247.17" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-4" data-name="Unbenannter Verlauf 6" cx="405.02" cy="409.03" fx="359.56" fy="400.21" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-5" data-name="Unbenannter Verlauf 6" cx="106.98" cy="408.94" fx="61.52" fy="400.12" xlink:href="#Unbenannter_Verlauf_6"/>
+  </defs>
+  <g id="measurements">
+    <g id="area">
+      <g>
+        <polygon class="cls-8" points="106.98 102.97 406 102.97 310.9 256 406 412.86 106.98 412.86 106.98 102.97"/>
+        <path class="cls-5" d="M434.41,428.86H90.98V86.97h343.8l-105.1,169.14,104.74,172.76ZM122.98,396.86h254.61l-85.46-140.97,85.09-136.93H122.98v277.9Z"/>
+      </g>
+      <circle class="cls-1" cx="106.98" cy="102.97" r="50"/>
+      <circle class="cls-2" cx="406" cy="102.97" r="50"/>
+      <circle class="cls-4" cx="310.9" cy="256" r="50"/>
+      <circle class="cls-6" cx="405.02" cy="409.03" r="50"/>
+      <circle class="cls-3" cx="106.98" cy="408.94" r="50"/>
+    </g>
+  </g>
+  <g id="frame">
+    <rect class="cls-7" width="512" height="512"/>
   </g>
 </svg>

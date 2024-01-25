@@ -80397,7 +80397,7 @@ ENDSEC
 			let lblMoveSpeed = $('#lblMoveSpeed');
 
 			elNavigation.append(this.createToolIcon(
-				Potree.resourcePath + '/icons/earth_controls_1.png',
+				Potree.resourcePath + '/icons/earth_controls.svg',
 				'[title]tt.earth_control',
 				() => { this.viewer.setControls(this.viewer.earthControls); }
 			));
@@ -80439,7 +80439,7 @@ ENDSEC
 			));
 
 			elNavigation.append(this.createToolIcon(
-				Potree.resourcePath + "/images/compas.svg",
+				Potree.resourcePath + "/icons/compas.svg",
 				"[title]tt.compass",
 				() => {
 					const visible = !this.viewer.compass.isVisible();
