@@ -37,7 +37,8 @@ viewer.loadGUI(() => {
 $(document).ready(function(){
 
 	//inner-panel function
-	document.querySelectorAll('.inner-panel h3').forEach(h3 => {
+	
+	/* document.querySelectorAll('.inner-panel h3').forEach(h3 => {
 		h3.addEventListener('click', function() {
 		// Finde das übergeordnete Panel-Element
 		const panel = this.closest('.inner-panel');
@@ -47,7 +48,15 @@ $(document).ready(function(){
 				panel.setAttribute('state', currentState === '0' ? '1' : '0');
 			}
 		});
-	});
+	}); */
+
+	$(document).on('click', '.inner-panel h3', function() {
+        const panel = $(this).closest('.inner-panel');
+        if (panel.length) {
+            const currentState = panel.attr('state');
+            panel.attr('state', currentState === '0' ? '1' : '0');
+        }
+    });
 
 	setTimeout(function(){
 
@@ -122,7 +131,7 @@ $(document).ready(function(){
 		document.querySelector('#clipmethod_options').remove();
 		document.querySelector('#pointsourceid_filter_panel').remove();
 
-		/*document.querySelector('#navigation').remove();*/
+		//document.querySelector('#navigation').remove();
 		document.querySelector('#lblMoveSpeed').remove();
 		document.querySelector('#sldMoveSpeed').remove();
 		document.querySelector('[data-i18n="appearance.move_speed"]').remove();
