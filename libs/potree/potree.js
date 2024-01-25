@@ -80123,7 +80123,7 @@ ENDSEC
 
 				let element = $(`
 				<li>
-					<label style="whitespace: nowrap; display: flex; align-items: center; font-weight: 700;">
+					<label class="class-list-element" style="whitespace: nowrap; display: flex; align-items: center; font-weight: 700;">
 						<input id="${inputID}" type="checkbox" ${checked}/>
 						<span style="flex-grow: 1; /*margin-left: 8px;*/">${name}</span>
 						<input id="${colorPickerID}" style="zoom: 0.5" />

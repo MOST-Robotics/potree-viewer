@@ -1311,7 +1311,7 @@ span[data-i18n="tb.about_opt"]::before{
 #tools{
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 8px; 
+	padding-bottom: 0px; 
 	flex-wrap: wrap; 
 	gap: 4px;
 }
@@ -1327,9 +1327,10 @@ span[data-i18n="tb.about_opt"]::before{
 	padding: 4px!important;
 } */
 #tools img:last-child{
-	height: 16px!important; width: 16px!important;
+	height: 20px!important; width: auto!important;
 	padding: 8px!important;
 	margin-top: 8px!important;
+	margin-left: auto;
 }
 #tools img:last-child::after{
 	content: "Remove"!important;
@@ -1403,6 +1404,12 @@ span[data-i18n="tb.about_opt"]::before{
 	/*margin-left: 0px!important;
 	margin-right: 0px!important;*/
 	margin-bottom: 16px!important;
+}
+
+.class-list-element{
+	background: linear-gradient(90deg, #323232, #242424);
+	padding-left: 4px;
+	border-radius: 8px;
 }
 
 body{
