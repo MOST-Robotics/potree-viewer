@@ -1410,6 +1410,11 @@ span[data-i18n="tb.about_opt"]::before{
 	background: linear-gradient(90deg, #323232, #242424);
 	padding-left: 4px;
 	border-radius: 8px;
+	transition: all .33s cubic-bezier(0,.5,.5,1);
+	cursor: pointer;
+}
+.class-list-element:hover{
+	background: linear-gradient(90deg, #404040, #242424);
 }
 
 body{
