@@ -1133,7 +1133,7 @@ input[type="checkbox"] {
 
 .inner-panel{
 	position: relative;
-	background: var(--color-2);
+	background: var(--color-panel);
 	border-radius: var(--border-radius-l)!important;
 	padding: 16px 16px;
 	margin-left: 12px; margin-right: 12px; margin-bottom: 6px;
@@ -1377,7 +1377,7 @@ span[data-i18n="tb.about_opt"]::before{
 	cursor: pointer;
 }
 .class-list-element:hover{
-	background: linear-gradient(90deg, var(--color-4), var(--color-3));
+	background: linear-gradient(90deg, var(--color-4), #00000000);
 }
 
 body{

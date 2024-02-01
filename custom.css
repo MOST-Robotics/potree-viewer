@@ -6,7 +6,7 @@
     --color-black:      rgba(0, 0, 0, 1);           /*000000*/
 	
 	--color-0: 			rgba( 8, 8, 8, 1);          /*080808*/
-	--color-1: 			rgba( 22, 22, 22, 1);       /*161616*/
+	--color-1: 			rgba( 24, 24, 24, 1);       /*181818*/
 	--color-2: 			rgba( 36, 36, 36, 1);       /*242424*/
 	--color-3: 			rgba( 50, 50, 50, 1);       /*323232*/
 	--color-4: 			rgba( 64, 64, 64, 1);       /*404040*/
@@ -24,6 +24,8 @@
 	--font-color:		var(--color-white);
 	--font-color-2:		var(--color-5);
 	--border-color:		var(--color-0);
+
+    --color-panel:      var(--color-1);
 	
 	--measurement-detail-node-bg-light:		var(--color-1);
 	--measurement-detail-node-bg-dark:		var(--color-2);
@@ -42,7 +44,7 @@
 
 /* As hex codes */
 .color-primary-0 { color: #080808 }
-.color-primary-1 { color: #161616 }
+.color-primary-1 { color: #181818 }
 .color-primary-2 { color: #242424 }
 .color-primary-3 { color: #323232 }
 .color-primary-4 { color: #404040 }
