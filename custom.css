@@ -1,0 +1,65 @@
+/* Import fonts */
+@import url("../fonts/montserrat/font.css");
+
+:root{
+    --color-white:      rgba(255, 255, 255, 1);     /*FFFFFF*/
+    --color-black:      rgba(0, 0, 0, 1);           /*000000*/
+	
+	--color-0: 			rgba( 8, 8, 8, 1);          /*080808*/
+	--color-1: 			rgba( 24, 24, 24, 1);       /*181818*/
+	--color-2: 			rgba( 36, 36, 36, 1);       /*242424*/
+	--color-3: 			rgba( 50, 50, 50, 1);       /*323232*/
+	--color-4: 			rgba( 64, 64, 64, 1);       /*404040*/
+    --color-5: 			rgba( 72, 72, 72, 1);       /*484848*/
+    --color-6: 			rgba( 250, 202, 48, 1);     /*FACA30*/
+	--color-7: 			rgba( 247, 181, 0, 1);      /*F7B500*/
+    --color-8:          rgba(236, 236, 236, 1);     /*ECECEC*/
+	
+	--bg-color:			var(--color-0);
+	--bg-color-2:		var(--color-1);
+	--bg-light-color:	var(--color-2);
+	--bg-dark-color:	var(--color-1);
+	--bg-hover-color:	var(--color-2);
+	
+	--font-color:		var(--color-white);
+	--font-color-2:		var(--color-white);
+	--border-color:		var(--color-0);
+
+    --color-panel:      var(--color-1);
+	
+	--measurement-detail-node-bg-light:		var(--color-1);
+	--measurement-detail-node-bg-dark:		var(--color-2);
+	--measurement-detail-area-bg-color:		var(--color-5);
+
+    --font-family: 'Montserrat', sans-serif;
+
+    --border-radius-xs:     2px;
+    --border-radius-s:      4px;
+    --border-radius-m:      8px;
+    --border-radius-l:      12px;
+    --border-radius-xl:     16px;
+    --border-radius-xxl:    24px;
+	
+}
+
+/* As hex codes */
+.color-primary-0 { color: #080808 }
+.color-primary-1 { color: #181818 }
+.color-primary-2 { color: #242424 }
+.color-primary-3 { color: #323232 }
+.color-primary-4 { color: #404040 }
+.color-primary-5 { color: #484848 }
+.color-primary-6 { color: #FACA30 }
+.color-primary-7 { color: #F7B500 }
+.color-primary-8 { color: #ECECEC }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: var(--color-0) }
+.rgba-primary-1 { color: var(--color-1) }
+.rgba-primary-2 { color: var(--color-2) }
+.rgba-primary-3 { color: var(--color-3) }
+.rgba-primary-4 { color: var(--color-4) }
+.rgba-primary-5 { color: var(--color-5) }
+.rgba-primary-6 { color: var(--color-6) }
+.rgba-primary-7 { color: var(--color-7) }
+.rgba-primary-8 { color: var(--color-8) }
