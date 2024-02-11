@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 407.02 414.07">
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
@@ -16,9 +16,16 @@
       }
 
       .cls-7 {
+        fill: none;
+      }
+
+      .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
         fill: #6400c8;
         opacity: .25;
-        stroke-width: 0px;
       }
 
       .cls-2 {
@@ -42,29 +49,32 @@
         fill: url(#Unbenannter_Verlauf_6-4);
       }
     </style>
-    <radialGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" cx="54" cy="54" fx="8.54" fy="45.17" r="50" gradientUnits="userSpaceOnUse">
+    <radialGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" cx="106.98" cy="102.97" fx="61.52" fy="94.14" r="50" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#faca30"/>
       <stop offset=".27" stop-color="#f9c62a"/>
       <stop offset=".61" stop-color="#f9bb1b"/>
       <stop offset=".98" stop-color="#f9a901"/>
       <stop offset="1" stop-color="#f9a800"/>
     </radialGradient>
-    <radialGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" cx="353.02" fx="307.56" fy="45.17" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
-    <radialGradient id="Unbenannter_Verlauf_6-3" data-name="Unbenannter Verlauf 6" cx="257.92" cy="207.03" fx="212.46" fy="198.21" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
-    <radialGradient id="Unbenannter_Verlauf_6-4" data-name="Unbenannter Verlauf 6" cx="352.04" cy="360.07" fx="306.58" fy="351.24" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
-    <radialGradient id="Unbenannter_Verlauf_6-5" data-name="Unbenannter Verlauf 6" cx="54" cy="359.97" fx="8.54" fy="351.15" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" cx="406" fx="360.54" fy="94.14" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-3" data-name="Unbenannter Verlauf 6" cx="310.9" cy="256" fx="265.44" fy="247.17" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-4" data-name="Unbenannter Verlauf 6" cx="405.02" cy="409.03" fx="359.56" fy="400.21" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="Unbenannter_Verlauf_6-5" data-name="Unbenannter Verlauf 6" cx="106.98" cy="408.94" fx="61.52" fy="400.12" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
   </defs>
   <g id="measurements">
     <g id="area">
       <g>
-        <polygon class="cls-7" points="54 54 353.02 54 257.92 207.03 353.02 363.9 54 363.9 54 54"/>
-        <path class="cls-5" d="M381.43,379.9H38V38h343.8l-105.1,169.14,104.74,172.76ZM70,347.9h254.61l-85.46-140.97,85.09-136.93H70v277.9Z"/>
+        <polygon class="cls-8" points="106.98 102.97 406 102.97 310.9 256 406 412.86 106.98 412.86 106.98 102.97"/>
+        <path class="cls-5" d="M434.41,428.86H90.98V86.97h343.8l-105.1,169.14,104.74,172.76ZM122.98,396.86h254.61l-85.46-140.97,85.09-136.93H122.98v277.9Z"/>
       </g>
-      <circle class="cls-1" cx="54" cy="54" r="50"/>
-      <circle class="cls-2" cx="353.02" cy="54" r="50"/>
-      <circle class="cls-4" cx="257.92" cy="207.03" r="50"/>
-      <circle class="cls-6" cx="352.04" cy="360.07" r="50"/>
-      <circle class="cls-3" cx="54" cy="359.97" r="50"/>
+      <circle class="cls-1" cx="106.98" cy="102.97" r="50"/>
+      <circle class="cls-2" cx="406" cy="102.97" r="50"/>
+      <circle class="cls-4" cx="310.9" cy="256" r="50"/>
+      <circle class="cls-6" cx="405.02" cy="409.03" r="50"/>
+      <circle class="cls-3" cx="106.98" cy="408.94" r="50"/>
     </g>
+  </g>
+  <g id="frame">
+    <rect class="cls-7" width="512" height="512"/>
   </g>
 </svg>
