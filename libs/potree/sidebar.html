@@ -38,7 +38,7 @@
 			<!--:-->
 
 			<!--<div class="divider"><span>Measurement</span></div>-->
-			<div id="inner-panel_measurement" class="inner-panel" state="0" style="margin-bottom: 16px!important">
+			<div id="inner-panel_measurement" class="inner-panel" state="0">
 				<h3>Measurement</h3>
 				<li id="tools"></li>
 				<li>
@@ -50,21 +50,27 @@
 			</div>
 			
 			<!--<div class="divider"><span>Clipping</span></div>-->
-			<li id="clipping_tools"></li>
-			<li>
-				<selectgroup id="cliptask_options">
-					<option id="cliptask_options_none" value="NONE">None</option>
-					<option id="cliptask_options_highlight" value="HIGHLIGHT">Highlight</option>
-					<option id="cliptask_options_show_inside" value="SHOW_INSIDE">Inside</option>
-					<option id="cliptask_options_show_outside" value="SHOW_OUTSIDE">Outside</option>
-				</selectgroup>
-			</li>
-			<li>
-				<selectgroup id="clipmethod_options">
-					<option id="clipmethod_options_any" value="INSIDE_ANY">Inside Any</option>
-					<option id="clipmethod_options_all" value="INSIDE_ALL">Inside All</option>
-				</selectgroup>
-			</li>
+			<div id="inner-panel_measurement" class="inner-panel" state="0" style="margin-bottom: 16px!important">
+				<h3>Clipping</h3>
+				<li id="clipping_tools">
+					<div style="width: 44px; height: 44px; background: none; border-radius: 8px; pointer-events: none; order: 6!important"></div>
+				</li>
+				<li style="margin-top: 16px!important">
+					<selectgroup id="cliptask_options">
+						<option id="cliptask_options_none" value="NONE">None</option>
+						<option id="cliptask_options_highlight" value="HIGHLIGHT">Highlight</option>
+						<option id="cliptask_options_show_inside" value="SHOW_INSIDE">Inside</option>
+						<option id="cliptask_options_show_outside" value="SHOW_OUTSIDE">Outside</option>
+					</selectgroup>
+				</li>
+				<li style="margin-top: 16px!important">
+					<selectgroup id="clipmethod_options">
+						<option id="clipmethod_options_any" value="INSIDE_ANY">Inside Any</option>
+						<option id="clipmethod_options_all" value="INSIDE_ALL">Inside All</option>
+					</selectgroup>
+				</li>
+			</div>
+
 		</div>
 
 		<!-- Classification -->

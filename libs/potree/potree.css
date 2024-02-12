@@ -1287,6 +1287,12 @@ span[data-i18n="tb.about_opt"]::before{
 	flex-wrap: wrap;
 	gap: 4px;
 }
+#clipping_tools{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 4px;
+}
 /* #tools img{
 	background: var(--color-4)!important;
 	border-radius: var(--border-radius-m)!important;
@@ -1306,7 +1312,7 @@ span[data-i18n="tb.about_opt"]::before{
 
 #scene_export{
 	position: relative;
-    background: var(--color-2);
+    background: var(--color-1);
     border-radius: var(--border-radius-l)!important;
     padding: 8px 16px;
     margin-left: 12px;

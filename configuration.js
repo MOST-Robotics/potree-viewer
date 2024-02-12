@@ -66,6 +66,7 @@ $(document).ready(function(){
 		document.querySelector('[title="Circle measurement"]').remove();
 		document.querySelector('[data-i18n="Azimuth"]').remove();
 		document.querySelector('[title="Annotation"]').remove();
+
 		//document.querySelector('[title="Volume measurement"]').remove();
 		document.querySelectorAll('[src*="sphere_distances"]').forEach(function(el) {
 			if (el.src.includes("sphere_distances")) {
@@ -126,9 +127,10 @@ $(document).ready(function(){
 		});
 
 		//Remove sidebar elements
-		document.querySelector('#clipping_tools').remove();
-		document.querySelector('#cliptask_options').remove();
-		document.querySelector('#clipmethod_options').remove();
+		
+		//document.querySelector('#clipping_tools').remove();
+		//document.querySelector('#cliptask_options').remove();
+		//document.querySelector('#clipmethod_options').remove();
 		document.querySelector('#pointsourceid_filter_panel').remove();
 
 		//document.querySelector('#navigation').remove();
