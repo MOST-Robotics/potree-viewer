@@ -44,7 +44,7 @@
 }
 
 .potree_info_text{
-	color:		white;
+	color:		var(--font-color);
 	font-weight: bold;
 	text-shadow:  1px  1px 1px black,
 				  1px -1px 1px black,
@@ -90,7 +90,7 @@
 }
 
 #potree_sidebar_container a{
-	color: 			var(--color-6);
+	color: 			var(--font-color);
 }
 
 #potree_quick_buttons{
@@ -150,7 +150,7 @@
 }
 
 a:hover, a:visited, a:link, a:active{
-	color: 				#ccccff;
+	color: 				var(--font-color);
 	text-decoration: 	none;
 }
 
@@ -163,7 +163,7 @@ a:hover, a:visited, a:link, a:active{
 }
 
 .annotation-titlebar{
-	color:			white;
+	color:			var(--font-color);
 	background-color:	black;
 	border-radius:	var(--border-radius-xxl);
 	border:			1px solid rgba(255, 255, 255, 0.7);
@@ -176,7 +176,7 @@ a:hover, a:visited, a:link, a:active{
 }
 
 .annotation-expand{
-	color:			white;
+	color:			var(--font-color);
 	font-size:		0.6em;
 	opacity:		1;
 }
@@ -202,7 +202,7 @@ a:hover, a:visited, a:link, a:active{
 }
 
 .annotation-item {
-	color:			white;
+	color:			var(--font-color);
 	background-color: 	black;
 	opacity:		0.5;
 	border-radius:	var(--border-radius-xxl);
@@ -241,7 +241,7 @@ a:hover, a:visited, a:link, a:active{
 
 .annotation-description{
 	position:		relative;
-	color:			white;
+	color:			var(--font-color);
 	background-color:	black;
 	padding:		10px;
 	margin:			5px 0px 0px 0px;
@@ -260,7 +260,7 @@ a:hover, a:visited, a:link, a:active{
 
 	
 .annotation-description-content{
-	color:			white;
+	color:			var(--font-color);
 }
 
 .annotation-icon{
@@ -468,7 +468,7 @@ body{
 
 .accordion > h3{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
-	color:		var(--color-1);
+	color:		var(--font-color-2);
 	cursor:		pointer;
 	margin:		0 .5rem .5rem .5rem;
 	padding:	.75rem 1.5rem;
@@ -491,7 +491,7 @@ body{
 
 legend{
 	margin-bottom: 0.75rem !important;
-    color: #969696;
+    color: var(--font-color);
     font-weight: 600;
 }
 
@@ -516,7 +516,7 @@ legend{
 
 #profile_titlebar{
 	background-color:	var(--bg-color-2);
-	color: var(--font-color-2);
+	color: var(--font-color);
 	/* text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 	font-size: 1em;
 	font-weight: bold;
@@ -641,14 +641,14 @@ legend{
 }
 #background_options .ui-state-default{
 	background: var(--color-4)!important;
-	color: var(--color-8);
+	color: var(--font-color);
 	font-weight: 500;
 	border: none!important;
 }
 #background_options .ui-state-default:hover{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
 	font-weight: 700;
-	color: var(--color-1);
+	color: var(--font-color-2);
 	border: none!important;
 }
 #background_options .ui-state-active{
@@ -674,14 +674,14 @@ legend{
 }
 #splat_quality_options .ui-state-default{
 	background: var(--color-4)!important;
-	color: var(--color-8);
+	color: var(--font-color);
 	font-weight: 500;
 	border: none!important;
 }
 #splat_quality_options .ui-state-default:hover{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
 	font-weight: 700!important;
-	color: var(--color-1);
+	color: var(--font-color-2);
 	border: none!important;
 }
 #splat_quality_options .ui-state-active{
@@ -704,14 +704,14 @@ legend{
 }
 #measurement_options_show .ui-state-default{
 	background: var(--color-4)!important;
-	color: var(--color-8);
+	color: var(--font-color);
 	font-weight: 500;
 	border: none!important;
 }
 #measurement_options_show .ui-state-default:hover{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
 	font-weight: 700!important;
-	color: var(--color-1);
+	color: var(--font-color-2);
 	border: none!important;
 }
 #measurement_options_show .ui-state-active{
@@ -734,14 +734,14 @@ legend{
 }
 #cliptask_options .ui-state-default{
 	background: var(--color-4)!important;
-	color: var(--color-8);
+	color: var(--font-color);
 	font-weight: 500;
 	border: none!important;
 }
 #cliptask_options .ui-state-default:hover{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
 	font-weight: 700!important;
-	color: var(--color-1);
+	color: var(--font-color-2);
 	border: none!important;
 }
 #cliptask_options .ui-state-active{
@@ -767,14 +767,14 @@ legend{
 }
 #clipmethod_options .ui-state-default{
 	background: var(--color-4)!important;
-	color: var(--color-8);
+	color: var(--font-color);
 	font-weight: 500;
 	border: none!important;
 }
 #clipmethod_options .ui-state-default:hover{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
 	font-weight: 700!important;
-	color: var(--color-1);
+	color: var(--font-color-2);
 	border: none!important;
 }
 #clipmethod_options .ui-state-active{
@@ -797,14 +797,14 @@ legend{
 }
 #camera_projection_options .ui-state-default{
 	background: var(--color-4)!important;
-	color: var(--color-8);
+	color: var(--font-color);
 	font-weight: 500;
 	border: none!important;
 }
 #camera_projection_options .ui-state-default:hover{
 	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
 	font-weight: 700!important;
-	color: var(--color-1);
+	color: var(--font-color-2);
 	border: none!important;
 }
 #camera_projection_options .ui-state-active{
@@ -1023,7 +1023,7 @@ input[type="checkbox"] {
 
   input[type="button"]{
 	background-color:var(--color-3);
-	color: white;
+	color: var(--font-color);
 	font-size: 14px;
 	padding: 10px 16px;
 	border-radius: var(--border-radius-m);
@@ -1078,7 +1078,7 @@ input[type="checkbox"] {
 	margin-top: -2px!important;
   }
   .sp-input{
-	color: #fff!important;
+	color: var(--font-color)!important;
 	font-family: var(--font-family)!important;
 	font-weight: 600!important;
 	background: var(--color-3)!important;
@@ -1087,7 +1087,7 @@ input[type="checkbox"] {
   }
   .sp-choose{
 	background:var(--color-3)!important;
-	color: white!important;
+	color: var(--font-color)!important;
 	font-size: 14px!important;
 	padding: 10px 16px!important;
 	border-radius: var(--border-radius-m)!important;
@@ -1111,7 +1111,7 @@ input[type="checkbox"] {
   }
  #optMaterial-button{
 	padding: 12px 16px;
-	background: var(--color-4); color: #fff;
+	background: var(--color-4); color: var(--font-color);
 	border: none!important;
 	border-radius: var(--border-radius-m);
 	font-family: var(--font-family);
@@ -1122,14 +1122,14 @@ input[type="checkbox"] {
     border-radius: var(--border-radius-m);
     border: none;
     margin-top: 4px;
-    color: #fff;
+    color: var(--font-color);
     padding: 8px;
 }
 #optMaterial-menu > li > .ui-state-active {
     background: #646464!important;
     border: none!important;
     border-radius: var(--border-radius-s)!important;
-    color: #fff!important;
+    color: var(--font-color)!important;
 }
 
 /* inner panel */
@@ -1167,7 +1167,7 @@ input[type="checkbox"] {
 	margin: 16px 16px;
 	font-size: 14px;
 	font-family: 'FontAwesome';
-	color: white;
+	color: var(--font-color);
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -1210,7 +1210,7 @@ input[type="checkbox"] {
 .inner-panel h3{
 	font-family: var(--font-family);
 	font-weight: 600;
-	color: #fff;
+	color: var(--font-color);
 	cursor: pointer;
 }
 .inner-panel .ui-slider{
@@ -1226,7 +1226,7 @@ input[type="checkbox"] {
 .pv-menu-list h4{
 	margin: 8px 0 12px 0!important;
 	font-weight: 600!important;
-	color: #969696!important;
+	color: var(--font-color)!important;
 }
 /* font size*/
 h3{
@@ -1316,7 +1316,7 @@ span[data-i18n="tb.about_opt"]::before{
 	align-items: center;
 	gap: 8px;
 	font-weight: 600;
-    color: #fff;
+    color: var(--font-color);
 }
 #scene_objects{
 	margin-top: 4px!important;
@@ -1359,7 +1359,7 @@ span[data-i18n="tb.about_opt"]::before{
 	display: flex;
 	align-items: center;
 	gap: 8px;
-    color: #fff;
+    color: var(--font-color);
 	font-size: 12px!important; line-height: 18px!important;
 }
 #about_container li{

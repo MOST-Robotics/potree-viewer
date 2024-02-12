@@ -5,14 +5,17 @@
     --color-white:      rgba(255, 255, 255, 1);     /*FFFFFF*/
     --color-black:      rgba(0, 0, 0, 1);           /*000000*/
 	
+	/* Elements */
 	--color-0: 			rgba( 8, 8, 8, 1);          /*080808*/
 	--color-1: 			rgba( 24, 24, 24, 1);       /*181818*/
 	--color-2: 			rgba( 36, 36, 36, 1);       /*242424*/
 	--color-3: 			rgba( 50, 50, 50, 1);       /*323232*/
 	--color-4: 			rgba( 64, 64, 64, 1);       /*404040*/
     --color-5: 			rgba( 72, 72, 72, 1);       /*484848*/
+	/* Accents */
     --color-6: 			rgba( 250, 202, 48, 1);     /*FACA30*/
 	--color-7: 			rgba( 247, 181, 0, 1);      /*F7B500*/
+	/* Invert */
     --color-8:          rgba(236, 236, 236, 1);     /*ECECEC*/
 	
 	--bg-color:			var(--color-0);
@@ -22,7 +25,7 @@
 	--bg-hover-color:	var(--color-2);
 	
 	--font-color:		var(--color-white);
-	--font-color-2:		var(--color-white);
+	--font-color-2:		var(--color-black);
 	--border-color:		var(--color-0);
 
     --color-panel:      var(--color-1);
