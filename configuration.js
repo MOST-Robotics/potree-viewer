@@ -127,7 +127,7 @@ $(document).ready(function(){
 		});
 
 		//Remove sidebar elements
-		
+
 		//document.querySelector('#clipping_tools').remove();
 		//document.querySelector('#cliptask_options').remove();
 		//document.querySelector('#clipmethod_options').remove();

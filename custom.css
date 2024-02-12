@@ -66,3 +66,22 @@
 .rgba-primary-6 { color: var(--color-6) }
 .rgba-primary-7 { color: var(--color-7) }
 .rgba-primary-8 { color: var(--color-8) }
+
+/* Hide attributes */
+/* #optMaterial-menu li:nth-child(1){display: none!important} */ /* intensity */
+#optMaterial-menu li:nth-child(2){display: none!important} /* intensity gradient */
+#optMaterial-menu li:nth-child(3){display: none!important} /* return number */
+#optMaterial-menu li:nth-child(4){display: none!important} /* number of returns */
+#optMaterial-menu li:nth-child(5){display: none!important} /* classification flags */
+/* #optMaterial-menu li:nth-child(6){display: none!important} */ /* classification */
+#optMaterial-menu li:nth-child(7){display: none!important} /* user data */
+#optMaterial-menu li:nth-child(8){display: none!important} /* scan angle */
+#optMaterial-menu li:nth-child(9){display: none!important} /* point source id */
+#optMaterial-menu li:nth-child(10){display: none!important} /* gps-time */
+/* #optMaterial-menu li:nth-child(11){display: none!important} */ /* rgba */
+/* #optMaterial-menu li:nth-child(12){display: none!important} */ /* elevation */
+/* #optMaterial-menu li:nth-child(13){display: none!important} */ /* color */
+#optMaterial-menu li:nth-child(14){display: none!important} /* matcap */
+#optMaterial-menu li:nth-child(15){display: none!important} /* indices */
+#optMaterial-menu li:nth-child(16){display: none!important} /* level of detail */
+/* #optMaterial-menu li:nth-child(17){display: none!important} */ /* composite */
