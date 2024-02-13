@@ -1,3 +1,5 @@
+@import url(../../custom.css);
+
 /*! jQuery UI - v1.12.1 - 2017-04-16
 * http://jqueryui.com
 * Includes: draggable.css, core.css, resizable.css, selectable.css, sortable.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, progressbar.css, selectmenu.css, slider.css, spinner.css, tabs.css, tooltip.css, theme.css
@@ -872,7 +874,12 @@ button.ui-button::-moz-focus-inner {
 	background: none;
 }
 .ui-tooltip {
-	padding: 8px;
+	padding: 12px;
+	background: var(--color-2)!important;
+	border: 1px solid var(--color-4)!important;
+	font-family: var(--font-family)!important;
+	color: var(--font-color)!important;
+	border-radius: var(--border-raidus-s)!important;
 	position: absolute;
 	z-index: 9999;
 	max-width: 300px;
