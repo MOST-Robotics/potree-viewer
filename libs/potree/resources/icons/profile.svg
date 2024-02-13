@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="uuid-af35d21d-3481-4c08-83eb-28da0cddaa86" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: url(#Unbenannter_Verlauf_19);
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 10px;
-      }
-    </style>
-    <linearGradient id="Unbenannter_Verlauf_19" data-name="Unbenannter Verlauf 19" x1="258.02" y1="430.28" x2="258.02" y2="87.38" gradientUnits="userSpaceOnUse">
+    <linearGradient id="uuid-dee7bc02-3df1-47d9-a680-d41c7ee72fe4" data-name="Unbenannter Verlauf 47" x1="258.01" y1="434.28" x2="258.01" y2="83.38" gradientUnits="userSpaceOnUse">
       <stop offset=".04" stop-color="#1a00ff"/>
       <stop offset=".05" stop-color="#1907f7"/>
       <stop offset=".17" stop-color="#0e669d"/>
@@ -27,15 +14,15 @@
       <stop offset=".55" stop-color="#daf616"/>
       <stop offset=".59" stop-color="#f5f815"/>
       <stop offset=".61" stop-color="#fff915"/>
-      <stop offset=".94" stop-color="#cf0900"/>
+      <stop offset=".94" stop-color="#e30613"/>
     </linearGradient>
   </defs>
-  <g id="measurements">
-    <g id="profile">
-      <path class="cls-2" d="M80.73,430.28c-3.43,0-6.91-.74-10.22-2.3-11.99-5.65-17.13-19.95-11.47-31.94l94.98-201.45c3.34-7.08,9.92-12.09,17.64-13.42,7.71-1.33,15.6,1.19,21.11,6.75l63.03,63.57,76.2-150.94c4.03-7.98,12.16-13.06,21.09-13.18,8.89-.13,17.2,4.73,21.45,12.6l81.87,151.66c6.3,11.66,1.95,26.22-9.72,32.52-11.66,6.3-26.22,1.95-32.52-9.72l-60.04-111.22-70.5,139.65c-3.48,6.89-10.06,11.68-17.68,12.89-7.62,1.2-15.36-1.33-20.79-6.81l-62.35-62.89-80.36,170.44c-4.09,8.68-12.72,13.77-21.72,13.77Z"/>
+  <g id="uuid-039d1131-1b30-4d2f-833f-c9d4a8a34dfe" data-name="measurements">
+    <g id="uuid-056c6117-a464-480d-8af6-668d14969463" data-name="profile">
+      <path d="M80.73,434.28c-4.14,0-8.15-.9-11.92-2.68-6.76-3.19-11.88-8.82-14.41-15.86-2.53-7.04-2.16-14.64,1.03-21.41l94.98-201.45c3.89-8.26,11.59-14.11,20.58-15.65,1.56-.27,3.16-.41,4.75-.41,7.41,0,14.66,3.02,19.88,8.29l59.12,59.63,73.7-145.98c4.72-9.34,14.15-15.23,24.61-15.38h.4c10.29,0,19.73,5.63,24.62,14.7l81.87,151.66c7.33,13.59,2.25,30.6-11.34,37.94-4.08,2.2-8.67,3.37-13.28,3.37-10.31,0-19.76-5.63-24.66-14.7l-56.4-104.48-67.05,132.81c-4.04,8.01-11.75,13.63-20.62,15.04-1.44.23-2.91.34-4.37.34-7.42,0-14.66-3.02-19.89-8.29l-58.33-58.83-77.93,165.28c-4.6,9.76-14.55,16.06-25.34,16.06Z" fill="url(#uuid-dee7bc02-3df1-47d9-a680-d41c7ee72fe4)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
     </g>
   </g>
-  <g id="frame">
-    <rect class="cls-1" width="512" height="512"/>
+  <g id="uuid-c8ec2885-94b3-45bf-a09e-4bff3a2062a5" data-name="frame">
+    <rect width="512" height="512" fill="none" stroke-width="0"/>
   </g>
 </svg>

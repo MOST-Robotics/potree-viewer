@@ -3,45 +3,45 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#Unbenannter_Verlauf_6-2);
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 10px;
-      }
-
-      .cls-4 {
         fill: none;
         stroke-width: 0px;
       }
 
       .cls-2 {
-        fill: #ececec;
+        fill: url(#MOST_Gradient-2);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
       }
 
       .cls-3 {
-        fill: url(#Unbenannter_Verlauf_6);
+        fill: #ececec;
+      }
+
+      .cls-4 {
+        fill: url(#MOST_Gradient);
       }
     </style>
-    <radialGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" cx="396" cy="116" fx="341.45" fy="105.41" r="60" gradientUnits="userSpaceOnUse">
+    <radialGradient id="MOST_Gradient" data-name="MOST Gradient" cx="396" cy="116" fx="341.45" fy="105.41" r="60" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#faca30"/>
       <stop offset=".27" stop-color="#f9c62a"/>
       <stop offset=".61" stop-color="#f9bb1b"/>
       <stop offset=".98" stop-color="#f9a901"/>
       <stop offset="1" stop-color="#f9a800"/>
     </radialGradient>
-    <radialGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" cx="116" cy="396" fx="61.45" fy="385.41" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="MOST_Gradient-2" data-name="MOST Gradient" cx="116" cy="396" fx="61.45" fy="385.41" xlink:href="#MOST_Gradient"/>
   </defs>
   <g id="measurements">
     <g id="distance">
-      <rect class="cls-2" x="35.38" y="236" width="441.23" height="40" transform="translate(-106.04 255.99) rotate(-45)"/>
-      <circle class="cls-3" cx="396" cy="116" r="60"/>
-      <circle class="cls-1" cx="116" cy="396" r="60"/>
+      <rect class="cls-3" x="35.38" y="232" width="441.23" height="48" transform="translate(-106.04 255.99) rotate(-45)"/>
+      <circle class="cls-4" cx="396" cy="116" r="60"/>
+      <circle class="cls-2" cx="116" cy="396" r="60"/>
     </g>
   </g>
   <g id="frame">
-    <rect class="cls-4" width="512" height="512"/>
+    <rect class="cls-1" width="512" height="512"/>
   </g>
 </svg>
