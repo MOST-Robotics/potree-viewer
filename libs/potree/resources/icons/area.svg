@@ -1,80 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="uuid-6e05aee6-3cc2-47e8-8b07-2e744b28409c" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#Unbenannter_Verlauf_6);
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
-        stroke-width: 8px;
-      }
-
-      .cls-7 {
-        fill: none;
-      }
-
-      .cls-7, .cls-8 {
-        stroke-width: 0px;
-      }
-
-      .cls-8 {
-        fill: #6400c8;
-        opacity: .25;
-      }
-
-      .cls-2 {
-        fill: url(#Unbenannter_Verlauf_6-2);
-      }
-
-      .cls-3 {
-        fill: url(#Unbenannter_Verlauf_6-5);
-      }
-
-      .cls-4 {
-        fill: url(#Unbenannter_Verlauf_6-3);
-      }
-
-      .cls-5 {
-        fill: #ececec;
-        stroke-width: 10px;
-      }
-
-      .cls-6 {
-        fill: url(#Unbenannter_Verlauf_6-4);
-      }
-    </style>
-    <radialGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" cx="106.98" cy="102.97" fx="61.52" fy="94.14" r="50" gradientUnits="userSpaceOnUse">
+    <radialGradient id="uuid-e5c27e48-5c17-44ec-9834-ef404a858669" data-name="MOST Gradient" cx="106.98" cy="102.97" fx="61.52" fy="94.14" r="50" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#faca30"/>
       <stop offset=".27" stop-color="#f9c62a"/>
       <stop offset=".61" stop-color="#f9bb1b"/>
       <stop offset=".98" stop-color="#f9a901"/>
       <stop offset="1" stop-color="#f9a800"/>
     </radialGradient>
-    <radialGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" cx="406" fx="360.54" fy="94.14" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
-    <radialGradient id="Unbenannter_Verlauf_6-3" data-name="Unbenannter Verlauf 6" cx="310.9" cy="256" fx="265.44" fy="247.17" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
-    <radialGradient id="Unbenannter_Verlauf_6-4" data-name="Unbenannter Verlauf 6" cx="405.02" cy="409.03" fx="359.56" fy="400.21" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
-    <radialGradient id="Unbenannter_Verlauf_6-5" data-name="Unbenannter Verlauf 6" cx="106.98" cy="408.94" fx="61.52" fy="400.12" r="50" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="uuid-1d9dc611-d314-48b0-979d-0e57349d45b2" data-name="MOST Gradient" cx="406" fx="360.54" fy="94.14" r="50" xlink:href="#uuid-e5c27e48-5c17-44ec-9834-ef404a858669"/>
+    <radialGradient id="uuid-5581a1b8-1f52-469f-901e-c44812b4ca5a" data-name="MOST Gradient" cx="310.9" cy="256" fx="265.44" fy="247.17" r="50" xlink:href="#uuid-e5c27e48-5c17-44ec-9834-ef404a858669"/>
+    <radialGradient id="uuid-632d0a01-4a4d-4b97-b1b5-3bde0efd6ebb" data-name="MOST Gradient" cx="405.02" cy="409.03" fx="359.56" fy="400.21" r="50" xlink:href="#uuid-e5c27e48-5c17-44ec-9834-ef404a858669"/>
+    <radialGradient id="uuid-38dbbf0a-6e6b-46e8-985c-c43b371f7607" data-name="MOST Gradient" cx="106.98" cy="408.94" fx="61.52" fy="400.12" r="50" xlink:href="#uuid-e5c27e48-5c17-44ec-9834-ef404a858669"/>
   </defs>
-  <g id="measurements">
-    <g id="area">
+  <g id="uuid-d94335f8-b5c7-4250-8a5e-d2ac9f905dbe" data-name="measurements">
+    <g id="uuid-e23476a0-af7e-4be4-9881-d43a07804c83" data-name="area">
       <g>
-        <polygon class="cls-8" points="106.98 102.97 406 102.97 310.9 256 406 412.86 106.98 412.86 106.98 102.97"/>
-        <path class="cls-5" d="M434.41,428.86H90.98V86.97h343.8l-105.1,169.14,104.74,172.76ZM122.98,396.86h254.61l-85.46-140.97,85.09-136.93H122.98v277.9Z"/>
+        <polygon points="106.98 102.97 406 102.97 310.9 256 406 412.86 106.98 412.86 106.98 102.97" fill="#6400c8" stroke-width="0"/>
+        <path d="M86.98,432.86V82.97h355l-107.61,173.16,107.14,176.73H86.98ZM370.49,392.86l-83.05-136.99,82.59-132.9H126.98v269.9h243.51Z" fill="#ececec" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
       </g>
-      <circle class="cls-1" cx="106.98" cy="102.97" r="50"/>
-      <circle class="cls-2" cx="406" cy="102.97" r="50"/>
-      <circle class="cls-4" cx="310.9" cy="256" r="50"/>
-      <circle class="cls-6" cx="405.02" cy="409.03" r="50"/>
-      <circle class="cls-3" cx="106.98" cy="408.94" r="50"/>
+      <circle cx="106.98" cy="102.97" r="50" fill="url(#uuid-e5c27e48-5c17-44ec-9834-ef404a858669)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+      <circle cx="406" cy="102.97" r="50" fill="url(#uuid-1d9dc611-d314-48b0-979d-0e57349d45b2)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+      <circle cx="310.9" cy="256" r="50" fill="url(#uuid-5581a1b8-1f52-469f-901e-c44812b4ca5a)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+      <circle cx="405.02" cy="409.03" r="50" fill="url(#uuid-632d0a01-4a4d-4b97-b1b5-3bde0efd6ebb)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+      <circle cx="106.98" cy="408.94" r="50" fill="url(#uuid-38dbbf0a-6e6b-46e8-985c-c43b371f7607)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
     </g>
   </g>
-  <g id="frame">
-    <rect class="cls-7" width="512" height="512"/>
+  <g id="uuid-a295bdaf-b003-46dd-9d54-8c7bf20345ec" data-name="frame">
+    <rect width="512" height="512" fill="none" stroke-width="0"/>
   </g>
 </svg>

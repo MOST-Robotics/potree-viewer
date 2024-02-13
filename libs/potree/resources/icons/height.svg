@@ -1,47 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="uuid-39c7cb62-e16a-4189-928c-ac811528b65e" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" width="132" height="431.06" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 132 431.06">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#Unbenannter_Verlauf_6-2);
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 10px;
-      }
-
-      .cls-4 {
-        fill: none;
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #ececec;
-      }
-
-      .cls-3 {
-        fill: url(#Unbenannter_Verlauf_6);
-      }
-    </style>
-    <radialGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" cx="256" cy="407.06" fx="201.45" fy="396.47" r="60" gradientUnits="userSpaceOnUse">
+    <radialGradient id="uuid-80047bd5-3776-460f-8008-91bc70101c1f" data-name="MOST Gradient" cx="66" cy="365.06" fx="11.45" fy="354.47" r="60" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#faca30"/>
       <stop offset=".27" stop-color="#f9c62a"/>
       <stop offset=".61" stop-color="#f9bb1b"/>
       <stop offset=".98" stop-color="#f9a901"/>
       <stop offset="1" stop-color="#f9a800"/>
     </radialGradient>
-    <radialGradient id="Unbenannter_Verlauf_6-2" data-name="Unbenannter Verlauf 6" cy="108" fy="97.41" xlink:href="#Unbenannter_Verlauf_6"/>
+    <radialGradient id="uuid-88f7c3a6-d62e-49db-aeec-0f65df8aa4b1" data-name="MOST Gradient" cy="66" fy="55.41" xlink:href="#uuid-80047bd5-3776-460f-8008-91bc70101c1f"/>
   </defs>
-  <g id="measurements">
-    <g id="height">
-      <path class="cls-2" d="M256,452.34c-11.05,0-20-8.95-20-20v-8c0-11.05,8.95-20,20-20s20,8.95,20,20v8c0,11.05-8.95,20-20,20ZM256,396.34c-11.05,0-20-8.95-20-20v-48c0-11.05,8.95-20,20-20s20,8.95,20,20v48c0,11.05-8.95,20-20,20ZM256,300.34c-11.05,0-20-8.95-20-20v-48c0-11.05,8.95-20,20-20s20,8.95,20,20v48c0,11.05-8.95,20-20,20ZM256,204.34c-11.05,0-20-8.95-20-20v-48c0-11.05,8.95-20,20-20s20,8.95,20,20v48c0,11.05-8.95,20-20,20Z"/>
-      <circle class="cls-3" cx="256" cy="407.06" r="60"/>
-      <circle class="cls-1" cx="256" cy="108" r="60"/>
+  <g id="uuid-424c5a6b-f0b9-411c-b3c6-3690fd1fbe59" data-name="measurements">
+    <g id="uuid-aca1c043-3550-4a61-8b90-792667d8ce64" data-name="height">
+      <path d="M66,411c-13.26,0-24-8.95-24-20v-8c0-11.05,10.74-20,24-20s24,8.95,24,20v8c0,11.05-10.74,20-24,20ZM66,355c-13.26,0-24-8.95-24-20v-48c0-11.05,10.74-20,24-20s24,8.95,24,20v48c0,11.05-10.74,20-24,20ZM66,259c-13.26,0-24-8.95-24-20v-48c0-11.05,10.74-20,24-20s24,8.95,24,20v48c0,11.05-10.74,20-24,20ZM66,163c-13.26,0-24-8.95-24-20v-48c0-11.05,10.74-20,24-20s24,8.95,24,20v48c0,11.05-10.74,20-24,20Z" fill="#ececec" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+      <circle cx="66" cy="365.06" r="60" fill="url(#uuid-80047bd5-3776-460f-8008-91bc70101c1f)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
+      <circle cx="66" cy="66" r="60" fill="url(#uuid-88f7c3a6-d62e-49db-aeec-0f65df8aa4b1)" stroke="#000" stroke-miterlimit="10" stroke-width="12"/>
     </g>
-  </g>
-  <g id="frame">
-    <rect class="cls-4" width="512" height="512"/>
   </g>
 </svg>
