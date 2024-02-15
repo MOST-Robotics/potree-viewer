@@ -817,6 +817,39 @@ legend{
 	border-radius: var(--border-radius-m) 0 0 var(--border-radius-m)!important;
 }
 
+/**/
+
+#gradient_repeat_option .ui-button{
+	border-radius: 0!important;
+	font-size: 12px;
+	padding-top: .5rem!important;
+	padding-bottom: .5rem!important;
+	border: none!important;
+}
+#gradient_repeat_option .ui-state-default{
+	background: var(--color-4)!important;
+	color: var(--font-color);
+	font-weight: 500;
+	border: none!important;
+}
+#gradient_repeat_option .ui-state-default:hover{
+	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
+	font-weight: 700!important;
+	color: var(--font-color-2);
+	border: none!important;
+}
+#gradient_repeat_option .ui-state-active{
+	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
+	font-weight: 700!important;
+	border: none!important;
+}
+#gradient_repeat_option span:first-child label{
+	border-radius: var(--border-radius-m) 0 0 var(--border-radius-m)!important;
+}
+#gradient_repeat_option span:nth-child(3) label{
+	border-radius: 0 var(--border-radius-m) var(--border-radius-m) 0!important;
+}
+
 
 
 
@@ -864,8 +897,38 @@ legend{
 	width: 100%;
 }
 
-
-
+div#materials\.elevation_container span {
+    font-weight: 500;
+    color: var(--font-color);
+    opacity: 75%;
+}
+#elevation_gradient_scheme_selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: left;
+}
+div#materials\.elevation_container span {
+	flex-grow: 0!important;
+    font-weight: 500;
+    color: var(--font-color);
+    opacity: 75%;
+}
+div#materials\.elevation_container span label{
+	flex-grow: 1!important;
+}
+#elevation_gradient_scheme_selection span svg {
+    width: 40px!important;
+    height: 40px!important;
+    padding: 0px!important;
+    border-radius: var(--border-radius-m)!important;
+    overflow: hidden!important;
+}
+#elevation_gradient_scheme_selection span svg rect {
+    border-radius: var(--border-radius-m)!important;
+    overflow: hidden!important;
+    stroke: none!important;
+}
 
 .zs_widget{
 	padding: 2px;

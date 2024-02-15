@@ -75708,21 +75708,22 @@ ENDSEC
 
 
 				<div id="materials.elevation_container" class="propertie_section">
-					<div class="divider">
+				
+					<!-- <div class="divider">
 						<span>Elevation</span>
-					</div>
+					</div> -->
 
-					<li><span data-i18n="appearance.elevation_range"></span>: <span id="lblHeightRange"></span> <div id="sldHeightRange"></div>	</li>
+					<li style="margin-top: 16px!important"><span data-i18n="appearance.elevation_range"></span>: <span id="lblHeightRange"></span> <div id="sldHeightRange"></div>	</li>
 
 					<li>
-						<selectgroup id="gradient_repeat_option">
+						<selectgroup id="gradient_repeat_option"> 
 							<option id="gradient_repeat_clamp" value="CLAMP">Clamp</option>
 							<option id="gradient_repeat_repeat" value="REPEAT">Repeat</option>
 							<option id="gradient_repeat_mirrored_repeat" value="MIRRORED_REPEAT">Mirrored Repeat</option>
 						</selectgroup>
 					</li>
 
-					<li>
+					<li style="margin-top: 16px!important">
 						<span>Gradient Scheme:</span>
 						<div id="elevation_gradient_scheme_selection" style="display: flex; padding: 1em 0em">
 						</div>
@@ -90329,7 +90330,7 @@ ENDSEC
 					let optionValue = $(value).prop("value");
 
 					let elButton = $(`
-					<span style="flex-grow: 1; display: inherit">
+					<span style="flex-grow: 1!important; display: inherit">
 					<label for="${buttonID}" class="ui-button" style="width: 100%; padding: .4em .1em">${label}</label>
 					<input type="radio" name="${groupID}" id="${buttonID}" value="${optionValue}" style="display: none"/>
 					</span>
