@@ -75712,6 +75712,7 @@ ENDSEC
 					<!-- <div class="divider">
 						<span>Elevation</span>
 					</div> -->
+					<h4 style="margin-top: 16px!important;">Settings</h4>
 
 					<li style="margin-top: 16px!important"><span data-i18n="appearance.elevation_range"></span>: <span id="lblHeightRange"></span> <div id="sldHeightRange"></div>	</li>
 

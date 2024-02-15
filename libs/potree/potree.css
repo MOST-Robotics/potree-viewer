@@ -897,23 +897,28 @@ legend{
 	width: 100%;
 }
 
-div#materials\.elevation_container span {
+/* div#materials\.elevation_container span {
     font-weight: 500;
     color: var(--font-color);
     opacity: 75%;
+} */
+
+#gradient_repeat_option legend{
+	font-weight: 400!important;
+	opacity: 100%!important;
 }
+
 #elevation_gradient_scheme_selection {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
     justify-content: left;
 }
-div#materials\.elevation_container span {
+
+#materials\.elevation_container span {
 	flex-grow: 0!important;
-    font-weight: 500;
-    color: var(--font-color);
-    opacity: 75%;
 }
+
 div#materials\.elevation_container span label{
 	flex-grow: 1!important;
 }
