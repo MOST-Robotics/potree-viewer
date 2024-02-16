@@ -59038,9 +59038,9 @@ void main() {
 	const ClassificationScheme = {
 
 		DEFAULT: {
-			0:       { visible: true, name: 'never classified'  , color: [0.08,  0.25,  1,  1.0] },
+			0:       { visible: true, name: 'never classified'  , color: [0.20,  0.20,  0.20,  1.0] },
 			1:       { visible: true, name: 'unclassified'      , color: [0.9,  0.15,  0,  1.0] },
-			2:       { visible: true, name: 'ground'            , color: [0.63, 0.32, 0.18, 1.0] },
+			2:       { visible: true, name: 'ground'            , color: [0.08,  0.25,  1,  1.0] },
 			3:       { visible: true, name: 'low vegetation'    , color: [0.0,  1.0,  0.0,  1.0] },
 			4:       { visible: true, name: 'medium vegetation' , color: [0.0,  0.8,  0.0,  1.0] },
 			5:       { visible: true, name: 'high vegetation'   , color: [0.08,  0.85,  0.25,  1.0] },

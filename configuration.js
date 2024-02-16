@@ -93,7 +93,7 @@ $(document).ready(function(){
 
 		//Remove classifications
 		var classElement = document.querySelectorAll('#classificationList li');
-		classElement[3].style.display = 'none'; //ground
+		// classElement[3].style.display = 'none'; //ground
 		classElement[4].style.display = 'none'; //low vegetation
 		classElement[5].style.display = 'none'; //medium vegetation
 		classElement[7].style.display = 'none'; //building
@@ -109,6 +109,9 @@ $(document).ready(function(){
 				span.textContent = 'Show / Hide all';
 			};
 			if (span.textContent === 'never classified') {
+				span.textContent = 'Unclassfied';
+			};
+			if (span.textContent === 'ground') {
 				span.textContent = 'Ground';
 			};
 			if (span.textContent === 'unclassified') {
