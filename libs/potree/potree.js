@@ -87684,7 +87684,7 @@ ENDSEC
 			function setEnter(){
 				button.element.innerHTML = `
 				<div style="font-size: 0.5em;">ENTER</div>
-				<div class="text-gradient" style="font-weight: 700; line-height: 1em; letter-spacing: 1px">VR</div>
+				<div class="text-gradient" style="font-weight: 700; line-height: 1em;">VR</div>
 				`;
 				button.element.classList.add('potree_vr_toggle');
 			}
@@ -87692,7 +87692,7 @@ ENDSEC
 			function setExit(){
 				button.element.innerHTML = `
 				<div style="font-size: 0.5em; letter-spacing: 2px;">EXIT</div>
-				<div class="text-gradient" style="font-weight: 700; line-height: 1em; letter-spacing: 1px">VR</div>
+				<div class="text-gradient" style="font-weight: 700; line-height: 1em;">VR</div>
 				`;
 				button.element.classList.add('potree_vr_toggle');
 			}
