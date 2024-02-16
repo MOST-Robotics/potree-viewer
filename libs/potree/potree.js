@@ -89006,8 +89006,12 @@ ENDSEC
 				sidebarContainer.css('width', '320px');
 				sidebarContainer.css('height', '100%');
 
-				let imgMenuToggle = document.createElement('img');
+				/* let imgMenuToggle = document.createElement('img');
 				imgMenuToggle.src = new URL(Potree.resourcePath + '/icons/menu_button.svg').href;
+				imgMenuToggle.onclick = this.toggleSidebar;
+				imgMenuToggle.classList.add('potree_menu_toggle'); */
+
+				let imgMenuToggle = document.createElement('button');
 				imgMenuToggle.onclick = this.toggleSidebar;
 				imgMenuToggle.classList.add('potree_menu_toggle');
 

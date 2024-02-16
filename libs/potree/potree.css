@@ -95,15 +95,15 @@
 
 #potree_quick_buttons{
 	position: absolute;
-	left: 4px;
-	top: 4px; 
+	left: 8px;
+	top: 8px; 
 	width: 10px; 
 	height: 10px; 
 	z-index: 10000;
 	float: left;
 }
 
-.potree_menu_toggle{
+/* .potree_menu_toggle{
 	float:			left;
 	margin:			0;
 	background:		none;
@@ -112,7 +112,7 @@
 	z-index:		100;
 	cursor: 		pointer;
 	margin:			4px;
-}
+} */
 
 #potree_map_toggle{
 	float:			left;
@@ -1462,6 +1462,24 @@ span[data-i18n="tb.about_opt"]::before{
 body{
 	background: url('resources/images/background.jpg');
 	background-size: cover;
+}
+.potree_menu_toggle{
+	background: linear-gradient(-30deg, #faca30, #f7b500);
+	border: none;
+	border-radius: var(--border-radius-m);
+	height: 40px; width: 40px;
+	z-index: 100;
+	cursor: pointer;
+}
+.potree_menu_toggle:after{
+	content: "\f0c9";
+	height: 40px; width: 40px;
+	position: absolute; display: flex;
+	justify-content: center; text-align: center; align-items: center;
+	left: 0; top: 0;
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	color: var(--font-color-2);
 }
 #loaderPopup{
 	position: absolute;
