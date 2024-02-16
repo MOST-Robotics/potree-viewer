@@ -97,8 +97,10 @@
 	position: absolute;
 	left: 8px;
 	top: 8px; 
-	width: 10px; 
-	height: 10px; 
+	display: flex; flex-direction: column;
+	gap: 8px;
+	/* width: 10px; 
+	height: 10px;  */
 	z-index: 10000;
 	float: left;
 }
@@ -1481,6 +1483,19 @@ body{
 	font-size: 24px;
 	color: var(--font-color-2);
 }
+.potree_vr_toggle{
+	/* background: linear-gradient(-30deg, #faca30, #f7b500); */
+	background: var(--color-3);
+	border: none;
+	border-radius: var(--border-radius-m);
+	height: 40px; width: 40px;
+	z-index: 100;
+	cursor: pointer;
+	font-family: var(--font-family);
+	color: var(--font-color);
+	font-size: 16px;
+	font-weight: 500;
+}
 #loaderPopup{
 	position: absolute;
 	top: 0; left: 0;
@@ -1494,4 +1509,17 @@ body{
 	-moz-backdrop-filter: blur(24px);
 	-o-backdrop-filter: blur(24px);
 	-ms-backdrop-filter: blur(24px);
+}
+
+.text-gradient{
+	background: -webkit-linear-gradient(30deg,#faca30,#f9a800)!important;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent!important;
+	-moz-background-clip: text!important;
+    -moz-text-fill-color: transparent!important;
+	-o-background-clip: text!important;
+    -o-text-fill-color: transparent!important;
+	-ms-background-clip: text!important;
+    -ms-text-fill-color: transparent!important;
+    font-weight: 800!important;
 }
