@@ -75,19 +75,21 @@
 	<script>
 
 		Potree.loadPointCloud("./pointclouds/Test/metadata.json", "Test", e => {
+
 			let scene = viewer.scene;
 			let pointcloud = e.pointcloud;
-			
 			let material = pointcloud.material;
 
-			material.rgbGamma = 1.2;
-			material.rgbBrightness = 0;
-			material.rgbContrast = 0.1;
-
 			material.size = 1;
-			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+			material.pointSizeType = Potree.PointSizeType.ADAPTIVE; //FIXED
 			material.shape = Potree.PointShape.CIRCLE;
-			material.activeAttributeName = "rgba";
+			material.activeAttributeName = "rgba"; //eleveation
+
+			//Options
+			//material.rgbGamma = 1.2;
+			//material.rgbBrightness = 0;
+			//material.rgbContrast = 0.1;
+			//material.elevationRange = [-2.25, 10];
 			
 			scene.addPointCloud(pointcloud);
 			
