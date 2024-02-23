@@ -1217,7 +1217,7 @@ input[type="checkbox"] {
 .inner-panel[state="0"]{
 	max-height: 18px!important;
 	padding: 12px 16px;
-	transition: all .33s ease;
+	transition: all .33s ease-out!important;
 }
 .inner-panel[state="0"] > h3{
 	margin: -12px -16px!important;
@@ -1226,7 +1226,7 @@ input[type="checkbox"] {
 .inner-panel[state="1"]{
 	max-height: 720px!important;
 	padding: 16px 16px;
-	transition: all .5s ease;
+	transition: all .33s ease-in!important;
 }
 .inner-panel[state="1"] > h3{
 	margin: -16px -16px!important;

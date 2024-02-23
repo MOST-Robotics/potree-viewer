@@ -16,7 +16,7 @@
 .share-buttons {
    display: flex; flex-direction: column;
    gap: 4px; border-radius: var(--border-radius-m);
-   max-height: 40px; min-height: 40px;
+   max-height: 40px; min-height: 40px; max-width: 40px;
    overflow: hidden;
    transition: all .33s cubic-bezier(0,.5,.5,1);
  }
@@ -38,13 +38,17 @@
    color: #fff;
    border-radius: var(--border-radius-m);
    cursor: pointer;
-   font-size: 16px;
+   font-size: 18px;
    text-align: center;
    width: 40px; height: 40px; min-height: 40px;
    margin-top: -44px;
    transform: scale(0.9);
    transition: all .25s cubic-bezier(1,.5,.5,0);
  }
+/*  .share-button:hover {
+   transform: scale(1)!important;
+   transition: all .25s cubic-bezier(0,.5,.5,1);
+ } */
  .facebook {
    background-color: #3b5998;
  }
