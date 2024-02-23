@@ -42,7 +42,71 @@
     --border-radius-l:      12px;
     --border-radius-xl:     16px;
     --border-radius-xxl:    24px;
+
+	--ed-style: inset 4px 4px 12px #ffffff10, inset -4px -4px 12px #00000040, 0px 2px 8px #00000020;
 	
+}
+
+/* Enable 3D Style */
+.button-icon{
+	box-shadow: var(--ed-style)!important;
+}
+fieldset > span{
+	position: relative;
+}
+fieldset > span:after{
+	content: ' ';
+	position: absolute;
+	top: 0; left: 0; height: 100%; width: 100%;
+	border-radius: var(--border-radius-m);
+	box-shadow: var(--ed-style)!important;
+	pointer-events: none;
+}
+/* li > span{
+	position: relative;
+}
+li > span:after{
+	content: ' ';
+	position: absolute;
+	top: 0; left: 0; height: 100%; width: 100%;
+	box-shadow: var(--ed-style)!important;
+	pointer-events: none;
+} */
+.inner-panel{
+	box-shadow: none!important;
+}
+input{
+	box-shadow: var(--ed-style)!important;
+}
+input:before{
+	box-shadow: var(--ed-style)!important;
+}
+button{
+	box-shadow: var(--ed-style)!important;
+}
+#potree_menu > h3{
+	box-shadow: none!important;
+}
+#scene_export{
+	box-shadow: none!important;
+}
+.class-list-element{
+	box-shadow: none!important;
+}
+.sp-preview{
+	box-shadow: none!important;
+}
+.sp-preview-inner{
+	box-shadow: none!important;
+}
+#optMaterial-button{
+	box-shadow: var(--ed-style)!important;
+}
+.jstree-clicked{
+	box-shadow: none!important;
+}
+.jstree-hovered{
+	box-shadow: none!important;
 }
 
 /* As hex codes */
