@@ -91,7 +91,7 @@ $(document).ready(function(){
         </div>
     `; */
 
-    potreeQuickButtons.appendChild(infoBox);
+    //potreeQuickButtons.appendChild(infoBox);
 
     /* document.querySelector('.info-button').addEventListener('mouseover', function() {
         document.querySelector('.info-box').style.maxHeight = '512px';

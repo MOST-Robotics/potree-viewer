@@ -168,6 +168,53 @@
 
 	</div>
 
+	<!-- Share-Screen -->
+	<div class="capture-area">
+
+		<div class="capture-container capture-container-closed" id="capture">
+
+			<div class="capture-header">
+				<h1>Projekt Titel</h1>
+				<img class="capture-close-button" src="./libs/guide/icons/close.svg"/>
+			</div>
+
+			<img id="capture_image" src=""></img>
+
+			<div style="display: flex; flex-direction: row;">
+
+				<div class="imageLoader">
+					<div id="loaderPopup"><lottie-player src="https://lottie.host/35121da5-e0b3-4063-808e-f4e64db99e13/ts0YewjQik.json" style="width: 120px; height: 120px" background="#00000000" speed="1" direction="1" mode="normal" loop="" autoplay=""></lottie-player></div>
+				</div>
+
+				<div style="display: flex; flex-direction: row; gap: 8px; align-items: center; flex-grow: 1">
+					<p>Share now</p>
+					<button class="capture-share-button linkedin">
+						<i class="fab fa-linkedin-in"></i>
+					</button>
+					<button class="capture-share-button facebook">
+						<i class="fab fa-facebook-f"></i>
+					</button>
+					<button class="capture-share-button whatsapp">
+						<i class="fab fa-whatsapp"></i>
+					</button>
+					<button class="capture-share-button twitter">
+						<i class="fab fa-twitter"></i>
+					</button>
+					<button class="capture-share-button email">
+						<i class="fa fa-envelope"></i>
+					</button>
+				</div>
+
+				<div style="display: flex; align-items: center">
+					<button id="capture_download"><i class="fa-solid fa-arrow-down"></i>Download</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
 	<!-- CONFIG -->
 	<script src="./configuration.js"></script>
 
