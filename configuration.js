@@ -36,6 +36,28 @@ viewer.loadGUI(() => {
 
 $(document).ready(function(){
 
+	//Get canvas
+	const canvas = document.querySelectorAll('canvas')[1];
+	const ctx = canvas.getContext('webgl');
+
+	// Scale canvas
+	var displayWidth = 1920;
+	var displayHeight = 1080;
+	var scale = 4;
+
+	if (!ctx) {
+		console.error('WebGL is not supported.');
+	} else {
+		canvas.style.width = displayWidth + 'px';
+		canvas.style.height = displayHeight + 'px';
+		canvas.width = displayWidth * scale;
+		canvas.height = displayHeight * scale;
+		/* canvas.width = '5160';
+		canvas.height = '2880';
+		ctx.viewport(0, 0, canvas.width, canvas.height); */
+		console.log('WebGL context obtained successfully.');
+	};
+
 	//inner-panel function
 	
 	/* document.querySelectorAll('.inner-panel h3').forEach(h3 => {
