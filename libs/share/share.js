@@ -68,14 +68,25 @@ $(document).ready(function(){
 
     const host = window.location.hostname;
     var imgID = generateImgID(8);
-    var imgURL = host + "/captures/" + imgID + ".jpg";
+    var imgURL = host + "/share/" + imgID + ".jpg";
 
     //Share capture
     $('.capture-button').click(function(){
 
         //Get canvas
         const canvas = document.querySelectorAll('canvas')[1];
-        var ctx = canvas.getContext('2d');
+
+        // Scale canvas
+        /* const ctx = canvas.getContext('webgl');
+        if (!ctx) {
+            console.error('WebGL is not supported.');
+        } else {
+            console.log('WebGL context obtained successfully.');
+        };
+        canvas.width = '3840';
+        canvas.height = '2160';
+        ctx.viewport(0, 0, canvas.width, canvas.height); */
+
 
         //Create image
         const img    = canvas.toDataURL('image/jpeg');
@@ -105,7 +116,10 @@ $(document).ready(function(){
         //Set image
         setTimeout(function(){
             document.getElementById('capture_image').src = imgPath;
-            document.getElementByClass('imageLoader').remove();
+            document.getElementById('imageLoader').style.opacity = "0";
+            document.getElementById('imageLoader').style.display = "none";
+            document.getElementById('capture_image').style.display = "unset";
+            document.getElementById('capture_image').style.opacity = "100";
         }, 1000);
         /* document.getElementById('capture_image').src = imgPath; */
 
@@ -116,6 +130,10 @@ $(document).ready(function(){
     $('.capture-close-button').click(function(){
 
         $('#capture').addClass('capture-container-closed');
+        document.getElementById('capture_image').style.opacity = "0";
+        document.getElementById('capture_image').style.display = "none";
+        document.getElementById('imageLoader').style.display = "flex";
+        document.getElementById('imageLoader').style.opacity= "100";
 
     });
     
