@@ -53590,7 +53590,7 @@
 			dashSize: 5, 
 			gapSize: 2,
 			linewidth: 2, 
-			resolution:  new Vector2(1000, 1000),
+			resolution:  new Vector2(4096, 4096),
 		});
 
 		lineMaterial.depthTest = false;
@@ -53655,7 +53655,7 @@
 		const lineMaterial = new LineMaterial({ 
 			color: 0xff0000, 
 			linewidth: 2, 
-			resolution:  new Vector2(1000, 1000),
+			resolution:  new Vector2(4096, 4096),
 			gapSize: 1,
 			dashed: true,
 		});
@@ -53702,7 +53702,7 @@
 			dashSize: 5, 
 			gapSize: 2,
 			linewidth: 2, 
-			resolution:  new Vector2(1000, 1000),
+			resolution:  new Vector2(4096, 4096),
 		});
 
 		material.depthTest = false;
@@ -53735,7 +53735,7 @@
 		const material = new LineMaterial({ 
 			color: 0xff0000, 
 			linewidth: 2, 
-			resolution:  new Vector2(1000, 1000),
+			resolution:  new Vector2(4096, 4096),
 			gapSize: 1,
 			dashed: true,
 		});
@@ -53782,7 +53782,7 @@
 			dashSize: 5, 
 			gapSize: 2,
 			linewidth: 2, 
-			resolution:  new Vector2(1000, 1000),
+			resolution:  new Vector2(4096, 4096),
 		});
 
 		material.depthTest = false;
@@ -53937,7 +53937,7 @@
 				let lineMaterial = new LineMaterial({
 					color: 0xff0000, 
 					linewidth: 2, 
-					resolution:  new Vector2(1000, 1000),
+					resolution:  new Vector2(4096, 4096),
 				});
 
 				lineMaterial.depthTest = false;
@@ -60825,7 +60825,7 @@ void main() {
 
 			if(typeof this.signedDistanceField === "undefined"){
 
-				const resolution = 32;
+				const resolution = 64;
 				const field = new Float32Array(resolution ** 3).fill(Infinity);
 
 				const positions = this.pcoGeometry.root.geometry.attributes.position;
@@ -64818,7 +64818,7 @@ void main() {
 					dashSize: 5, 
 					gapSize: 2,
 					linewidth: 2, 
-					resolution:  new Vector2(1000, 1000),
+					resolution:  new Vector2(4096, 4096),
 				});
 
 				const line = new Line2(geometry, material);
@@ -64835,7 +64835,7 @@ void main() {
 					dashSize: 5, 
 					gapSize: 2,
 					linewidth: 2, 
-					resolution:  new Vector2(1000, 1000),
+					resolution:  new Vector2(4096, 4096),
 				});
 
 				const line = new Line2(geometry, material);
@@ -64884,7 +64884,7 @@ void main() {
 			let material = new LineMaterial({ 
 				color: 0xff0000, 
 				linewidth: 2, 
-				resolution:  new Vector2(1000, 1000),
+				resolution:  new Vector2(4096, 4096),
 			});
 
 			const line = new Line2(geometry, material);
@@ -67113,7 +67113,7 @@ void main() {
 			const matLine = new LineMaterial( {
 				color: 0xff0000,
 				linewidth: 3, // in pixels
-				resolution:  new Vector2(1000, 1000),
+				resolution:  new Vector2(4096, 4096),
 				dashed: false
 			} );
 
@@ -67352,7 +67352,7 @@ void main() {
 					const matLine = new LineMaterial( {
 						color: new Color().setRGB(...getColor(table)),
 						linewidth: 2, 
-						resolution:  new Vector2(1000, 1000),
+						resolution:  new Vector2(4096, 4096),
 						dashed: false
 					} );
 
@@ -87340,7 +87340,7 @@ ENDSEC
 					let lineMaterial = new LineMaterial({ 
 						color: 0xff0000,
 						linewidth: 2, 
-						resolution:  new Vector2(1000, 1000),
+						resolution:  new Vector2(4096, 4096),
 					});
 
 					const line = new Line2(lineGeometry, lineMaterial);
@@ -87391,7 +87391,7 @@ ENDSEC
 					let lineMaterial = new LineMaterial({ 
 						color: 0xff0000, 
 						linewidth: 2, 
-						resolution:  new Vector2(1000, 1000),
+						resolution:  new Vector2(4096, 4096),
 					});
 
 					const line = new Line2(lineGeometry, lineMaterial);
