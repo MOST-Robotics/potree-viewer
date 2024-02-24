@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    var project_title = document.querySelector('title').innerText;
+    document.getElementById('info-title').innerHTML = project_title;
+    document.getElementById('capture-title').innerHTML = project_title;
+
     var potreeQuickButtons = document.querySelector('#potree_quick_buttons');
 
     let infoButton = document.createElement('button');
