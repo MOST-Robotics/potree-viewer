@@ -79,7 +79,7 @@
 		<div class="info-container info-container-closed" id="info">
 
 			<div class="info-header">
-				<h1>Projekt Titel</h1>
+				<h1 id="info-title">Projekt Titel</h1>
 				<img class="info-close-button" src="./libs/guide/icons/close.svg"/>
 			</div>
 			<!-- <a href="" style="margin-top: -8px">https://viewer.mostrobotics.com/Aurich</a> -->
@@ -174,17 +174,18 @@
 		<div class="capture-container capture-container-closed" id="capture">
 
 			<div class="capture-header">
-				<h1>Projekt Titel</h1>
+				<h1 id="capture-title">Projekt Titel</h1>
 				<img class="capture-close-button" src="./libs/guide/icons/close.svg"/>
 			</div>
 
-			<img id="capture_image" src=""></img>
+			<div style="min-width: 640px; min-height: 320px;">
+			<img id="capture_image" src="" style="display: none; opacity: 0;"></img>
+			<div id="imageLoader" style="display: flex; opacity: 100;">
+				<lottie-player src="https://lottie.host/35121da5-e0b3-4063-808e-f4e64db99e13/ts0YewjQik.json" style="width: 120px; height: 120px" background="#00000000" speed="1" direction="1" mode="normal" loop="" autoplay=""></lottie-player>
+			</div>
+			</div>
 
 			<div style="display: flex; flex-direction: row;">
-
-				<div class="imageLoader">
-					<div id="loaderPopup"><lottie-player src="https://lottie.host/35121da5-e0b3-4063-808e-f4e64db99e13/ts0YewjQik.json" style="width: 120px; height: 120px" background="#00000000" speed="1" direction="1" mode="normal" loop="" autoplay=""></lottie-player></div>
-				</div>
 
 				<div style="display: flex; flex-direction: row; gap: 8px; align-items: center; flex-grow: 1">
 					<p>Share now</p>
@@ -227,15 +228,20 @@
 			let material = pointcloud.material;
 
 			material.size = 1;
-			material.pointSizeType = Potree.PointSizeType.ADAPTIVE; //FIXED
+			material.pointSizeType = Potree.PointSizeType.FIXED; //FIXED //ADAPTIVE
 			material.shape = Potree.PointShape.CIRCLE;
 			material.activeAttributeName = "rgba"; //eleveation
 
-			//Options
-			//material.rgbGamma = 1.2;
+			// ###Options
+
+			//material.rgbGamma = 1;
 			//material.rgbBrightness = 0;
-			//material.rgbContrast = 0.1;
-			//material.elevationRange = [-2.25, 10];
+			//material.rgbContrast = 0;
+			//material.intensityRange = [-10, 10];
+			//material.intensityGamma = 1;
+			//material.intensityBrightness = 0;
+			//material.intensityContrast = 0;
+			//material.elevationRange = [-10, 10];
 			
 			scene.addPointCloud(pointcloud);
 			
