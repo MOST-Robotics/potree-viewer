@@ -1,0 +1,58 @@
+{
+    "project_info": {
+        "visible": "true",
+        "systems": {
+            "visible": "true",
+            "platform": {
+                "visible": "true",
+                "type": "Drone",
+                "name": "Hexadrone Tundra 2",
+                "link": "https://hexadrone.fr/"
+            },
+            "payload": {
+                "visible": "true",
+                "type": "LiDAR",
+                "name": "YellowScan Explorer",
+                "link": "https://mostrobotics.com/payloads/yellowscan-explorer"
+            }
+        },
+        "params": {
+            "visible": "true",
+            "flight_height": {
+                "visible": "true",
+                "content": "120 m"
+            },
+            "flight_speed": {
+                "visible": "true",
+                "content": "10 m/s"
+            },
+            "flight_time": {
+                "visible": "true",
+                "content": "45 min."
+            },
+            "overlap": {
+                "visible": "true",
+                "content": "30 %"
+            },
+            "cross_flight": {
+                "visible": "true",
+                "content": "No"
+            }
+        },
+        "data": {
+            "visible": "true",
+            "area": {
+                "visible": "true",
+                "content": "25 km²"
+            },
+            "point_budget": {
+                "visible": "true",
+                "content": "250.000"
+            },
+            "point_density": {
+                "visible": "true",
+                "content": "250 pt/m²"
+            }
+        }
+    }
+}

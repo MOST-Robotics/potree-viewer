@@ -1,58 +1,194 @@
 $(document).ready(function(){
 
-    var project_title = document.querySelector('title').innerText;
-    document.getElementById('info-title').innerHTML = project_title;
-    document.getElementById('capture-title').innerHTML = project_title;
+    $.getJSON('info.json', function(data) {
 
+        var info = data.project_info;
+        console.log(info);
+
+        //Toggle info-button
+        if(info.visible != "true"){
+            document.querySelector('.info-button').remove();
+        }
+        //Toggle systems
+        if(info.systems.visible != "true"){
+            document.querySelector('#inner-panel_systems').remove();
+        }
+        //Toggle params
+        if(info.params.visible != "true"){
+            document.querySelector('#inner-panel_params').remove();
+        }
+        //Toggle data
+        if(info.data.visible != "true"){
+            document.querySelector('#inner-panel_data').remove();
+        }
+
+        //Set system platform
+        if(info.systems.platform.visible != "true"){
+            document.querySelector('.info-platform').remove();
+        }
+        document.querySelector('#platform_type').innerHTML = info.systems.platform.type;
+        document.querySelector('#platform_name').innerHTML = info.systems.platform.name;
+        document.querySelector('#platform_name').setAttribute('href', info.systems.platform.link);
+
+        //Set system payload
+        if(info.systems.payload.visible != "true"){
+            document.querySelector('.info-payload').remove();
+        }
+        document.querySelector('#payload_type').innerHTML = info.systems.payload.type;
+        document.querySelector('#payload_name').innerHTML = info.systems.payload.name;
+        document.querySelector('#payload_name').setAttribute('href', info.systems.payload.link);
+
+        //Set flight height
+        if(info.params.flight_height.visible != "true"){
+            document.querySelector('.flightHeight').remove();
+        }
+        document.querySelector('#flightHeight').innerHTML = info.params.flight_height.content;
+
+        //Set flight speed
+        if(info.params.flight_speed.visible != "true"){
+            document.querySelector('.flightSpeed').remove();
+        }
+        document.querySelector('#flightSpeed').innerHTML = info.params.flight_speed.content;
+
+        //Set flight time
+        if(info.params.flight_time.visible != "true"){
+            document.querySelector('.flightTime').remove();
+        }
+        document.querySelector('#flightTime').innerHTML = info.params.flight_time.content;
+
+        //Set overlap
+        if(info.params.overlap.visible != "true"){
+            document.querySelector('.overlap').remove();
+        }
+        document.querySelector('#overlap').innerHTML = info.params.overlap.content;
+
+        //Set cross flight
+        if(info.params.cross_flight.visible != "true"){
+            document.querySelector('.crossFlight').remove();
+        }
+        document.querySelector('#crossFlight').innerHTML = info.params.cross_flight.content;
+
+        //Set area
+        if(info.data.area.visible != "true"){
+            document.querySelector('.area').remove();
+        }
+        document.querySelector('#area').innerHTML = info.data.area.content;
+
+        //Set point budget
+        if(info.data.point_budget.visible != "true"){
+            document.querySelector('.pointBudget').remove();
+        }
+        document.querySelector('#pointBudget').innerHTML = info.data.point_budget.content;
+        
+        //Set point density
+        if(info.data.point_density.visible != "true"){
+            document.querySelector('.pointDensity').remove();
+        }
+        document.querySelector('#pointDensity').innerHTML = info.data.point_density.content;
+
+    }).fail(function() {
+        document.querySelector('.info-button').remove();
+        console.log("Can't read project information");
+    });
+
+    //Set project title and description
+    var title = document.querySelector('title').innerText;
+    var description = document.querySelector('[name="description"]').getAttribute('content');
+    document.getElementById('capture-title').innerHTML = title;
+
+    //Add info button
     var potreeQuickButtons = document.querySelector('#potree_quick_buttons');
-
     let infoButton = document.createElement('button');
     infoButton.classList.add('info-button');
     infoButton.innerHTML = `<i class="fa fa-info"></i>`;
     potreeQuickButtons.appendChild(infoButton);
 
-    /* document.querySelector('.info-box').addEventListener('mouseover', function() {
+    //Add info container
+    document.querySelector('.info-area').innerHTML = `
+    
+    <div class="info-container info-container-closed" id="info">
 
-        setTimeout(function(){
-            document.querySelector('.info-box').style.maxWidth = '420px';
-        }, 250);
+			<div class="info-header">
+				<h1 id="info-title">`+ title +`</h1>
+				<img class="info-close-button" src="./libs/guide/icons/close.svg"/>
+			</div>
+			<p>`+ description +`</p>
+			<div id="inner-panel_systems" class="inner-panel" state="1" style="display:">
+				<h3>Systems</h3>
+				<div style="display: flex; flex-direction: row; row-gap: 16px; margin-top: 8px; flex-wrap: wrap;">
 
-        document.querySelector('.info-button').style.width = '48px';
-        document.querySelector('.info-button').style.borderRadius = 'var(--border-radius-m) 0 0 var(--border-radius-m)';
+					<div class="info-platform" style="display: flex; flex-direction: row; flex-grow: 1; width: 50%; min-width: 240px">
+						<i class="fa fa-circle"></i>
+						<div>
+							<p id="platform_type">Drone / VTOL</p>
+							<a id="platform_name" href=""></a>
+						</div>
+					</div>
 
-    }); */
-      
-    /* document.querySelector('.info-button').addEventListener('mouseout', function() {
+					<div class="info-payload" style="display: flex; flex-direction: row; flex-grow: 1; width: 50%; min-width: 240px">
+						<i class="fa fa-circle"></i>
+						<div>
+							<p id="payload_type">LiDAR / Kamera</p>
+							<a id="payload_name" href="">YellowScan Navigator</a>
+						</div>
+					</div>
 
-        document.querySelector('.info-box').style.maxWidth = '0px';
+				</div>
+			</div>
+			<div id="inner-panel_params" class="inner-panel" state="1">
+				<h3>Flight parameters</h3>
+				<div style="display: flex; flex-direction: row; row-gap: 16px; margin-top: 8px; flex-wrap: wrap;">
 
-        setTimeout(function(){
-            document.querySelector('.info-button').style.width = '40px';
-            document.querySelector('.info-button').style.borderRadius = 'var(--border-radius-m) var(--border-radius-m) var(--border-radius-m) var(--border-radius-m)';
-        }, 500);
+					<div class="info-params flightHeight" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Flight height</p>
+						<p id="flightHeight">100 m</p>
+					</div>
 
-    });
+					<div class="info-params flightSpeed" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Flight speed</p>
+						<p id="flightSpeed">10 m/s</p>
+					</div>
 
-    document.querySelector('.info-box').addEventListener('mouseout', function() {
+					<div class="info-params flightTime" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Flight time</p>
+						<p id="flightTime">1h</p>
+					</div>
 
-        document.querySelector('.info-box').style.maxWidth = '0px';
+					<div class="info-params overlap" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Overlap</p>
+						<p id="overlap">10 %</p>
+					</div>
 
-        setTimeout(function(){
-            document.querySelector('.info-button').style.width = '40px';
-            document.querySelector('.info-button').style.borderRadius = 'var(--border-radius-m) var(--border-radius-m) var(--border-radius-m) var(--border-radius-m)';
-        }, 500);
+					<div class="info-params crossFlight" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Cross flight</p>
+						<p id="crossFlight">No</p>
+					</div>
 
-    }); */
+				</div>
+			</div>
+			<div id="inner-panel_data" class="inner-panel" state="1">
+				<h3>Data info</h3>
 
-    //Position correction
-    /* var $container = $('#info');
-    var containerHeight = $container.outerHeight();
-    var containerWidth = $container.outerWidth();
+				<div style="display: flex; flex-direction: row; row-gap: 16px; margin-top: 8px; flex-wrap: wrap;">
 
-    $container.css({
-        'margin-top': -(containerHeight / 2) + 'px',
-        'margin-left': -(containerWidth / 2) + 'px'
-    }); */
+					<div class="info-params area" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Area</p>
+						<p id="area">10.000 m²</p>
+					</div>
+
+					<div class="info-params pointBudget" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Point budget</p>
+						<p id="pointBudget">100.000</p>
+					</div>
+
+					<div class="info-params pointDensity" style="display: flex; flex-direction: column; width: 33%; min-width: 120px">
+						<p>Point density</p>
+						<p id="pointDensity">500 pt/m²</p>
+					</div>
+
+			</div>
+		</div>
+    `;
 
     $('.info-close-button').click(function(){
         $('#info').addClass('info-container-closed');
@@ -60,49 +196,5 @@ $(document).ready(function(){
     $('.info-button').click(function(){
         $('#info').removeClass('info-container-closed');
     });
-
-    /* let infoBox = document.createElement('div');
-    infoBox.classList.add('info-wrapper');
-    infoBox.innerHTML = `
-        <div class="info-button">
-            <i class="fa fa-info"></i>
-        </div>
-        <div class="info-box">
-
-            <h1>Projekt Titel</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            
-            <h2>Systeme</h2>
-            <div style="display: flex; flex-direction: row; width: 100%;">
-
-                <div style="display: flex; flex-direction: row; width: 50%">
-                    <i class="fa fa-circle"></i>
-                    <div style="display: flex; flex-direction: column;">
-                        <h3>Plattform</h3>
-                        <a href="">Acecore ZOE X4</a>
-                    </div>
-                </div>
-
-                <div style="display: flex; flex-direction: row; width: 50%">
-                <i class="fa fa-circle"></i>
-                    <div style="display: flex; flex-direction: column;">
-                        <h3>LiDAR/Kamera</h3>
-                        <a href="">YellowScan Navigator</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    `; */
-
-    //potreeQuickButtons.appendChild(infoBox);
-
-    /* document.querySelector('.info-button').addEventListener('mouseover', function() {
-        document.querySelector('.info-box').style.maxHeight = '512px';
-    });
-      
-    document.querySelector('.info-button').addEventListener('mouseout', function() {
-        document.querySelector('.info-box').style.maxHeight = '0px';
-    }); */
 
 });

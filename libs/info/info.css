@@ -159,20 +159,20 @@
     color: var(--font-color);
     margin-right: 12px;
 }
-.info-system p{
+.info-payload p{
     font-size: 12px!important;
     line-height: 12px!important;
     font-weight: 400!important;
     margin: 0!important;
 }
-.info-system a{
+.info-payload a{
     font-family: var(--font-family)!important;
     font-size: 16px!important;
     line-height: 28px!important;
     font-weight: 600!important;
     margin: 0!important;
 }
-.info-system a:after{
+.info-payload a:after{
     content: '\f35d';
     font-family: 'FontAwesome';
     font-size: 12px; line-height: 24px;
@@ -181,10 +181,10 @@
     opacity: 33%;
     transition: all .25s ease;
 }
-.info-system a:hover:after{
+.info-payload a:hover:after{
     opacity: 66%;
 }
-.info-system i{
+.info-payload i{
     font-size: 32px!important;
     line-height: 32px!important;
     color: var(--font-color);
