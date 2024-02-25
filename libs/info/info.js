@@ -94,7 +94,6 @@ $(document).ready(function(){
     //Set project title and description
     var title = document.querySelector('title').innerText;
     var description = document.querySelector('[name="description"]').getAttribute('content');
-    document.getElementById('capture-title').innerHTML = title;
 
     //Add info button
     var potreeQuickButtons = document.querySelector('#potree_quick_buttons');

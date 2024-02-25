@@ -43,7 +43,7 @@
     --border-radius-xl:     16px;
     --border-radius-xxl:    24px;
 
-	--ed-style: inset 2px 2px 4px #ffffff05, inset -2px -2px 4px #00000010, 0px 2px 8px #00000010;
+	--ed-style: inset 0 4px 4px #ffffff10, inset 0 -8px 8px #00000020, 0px 2px 8px #00000010;
 	
 }
 

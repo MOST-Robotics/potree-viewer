@@ -66,6 +66,55 @@ $(document).ready(function(){
     potreeQuickButtons.appendChild(captureButton);
     potreeQuickButtons.appendChild(shareButtonsDiv);
 
+    //Set project title and description
+    var title = document.querySelector('title').innerText;
+    document.querySelector('.capture-area').innerHTML = `
+
+        <div class="capture-container capture-container-closed" id="capture">
+
+			<div class="capture-header">
+				<h1 id="capture-title">`+ title +`</h1>
+				<img class="capture-close-button" src="./libs/guide/icons/close.svg"/>
+			</div>
+
+			<div style="min-width: 640px; min-height: 320px;">
+			<img id="capture_image" src="" style="display: none; opacity: 0;"></img>
+			<div id="imageLoader" style="display: flex; opacity: 100;">
+				<lottie-player src="https://lottie.host/35121da5-e0b3-4063-808e-f4e64db99e13/ts0YewjQik.json" style="width: 120px; height: 120px" background="#00000000" speed="1" direction="1" mode="normal" loop="" autoplay=""></lottie-player>
+			</div>
+			</div>
+
+			<div style="display: flex; flex-direction: row;">
+
+				<div style="display: flex; flex-direction: row; gap: 8px; align-items: center; flex-grow: 1">
+					<p>Share now</p>
+					<button class="capture-share-button linkedin">
+						<i class="fab fa-linkedin-in"></i>
+					</button>
+					<button class="capture-share-button facebook">
+						<i class="fab fa-facebook-f"></i>
+					</button>
+					<button class="capture-share-button whatsapp">
+						<i class="fab fa-whatsapp"></i>
+					</button>
+					<button class="capture-share-button twitter">
+						<i class="fab fa-twitter"></i>
+					</button>
+					<button class="capture-share-button email">
+						<i class="fa fa-envelope"></i>
+					</button>
+				</div>
+
+				<div style="display: flex; align-items: center">
+					<button id="capture_download"><i class="fa-solid fa-arrow-down"></i>Download</button>
+				</div>
+
+			</div>
+
+		</div>
+        
+    `;
+
     const host = window.location.hostname;
     var imgID = generateImgID(8);
     var imgURL = host + "/share/" + imgID + ".jpg";
@@ -188,6 +237,6 @@ $(document).ready(function(){
     element.click();
 
     document.body.removeChild(element);
-});
+    });
 
 });

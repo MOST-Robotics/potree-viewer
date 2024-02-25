@@ -24,7 +24,7 @@
             },
             "flight_speed": {
                 "visible": "true",
-                "content": "10 m/s"
+                "content": "25 m/s"
             },
             "flight_time": {
                 "visible": "true",
