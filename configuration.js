@@ -36,7 +36,7 @@ viewer.loadGUI(() => {
 
 $(document).ready(function(){
 
-	//Get canvas
+	/* //Get canvas
 	const canvas = document.querySelectorAll('canvas')[1];
 	const ctx = canvas.getContext('webgl');
 
@@ -52,11 +52,11 @@ $(document).ready(function(){
 		canvas.style.height = displayHeight + 'px';
 		canvas.width = displayWidth * scale;
 		canvas.height = displayHeight * scale;
-		/* canvas.width = '5160';
+		canvas.width = '5160';
 		canvas.height = '2880';
-		ctx.viewport(0, 0, canvas.width, canvas.height); */
+		ctx.viewport(0, 0, canvas.width, canvas.height);
 		console.log('WebGL context obtained successfully.');
-	};
+	}; */
 
 	//inner-panel function
 	
