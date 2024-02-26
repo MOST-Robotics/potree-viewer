@@ -229,7 +229,7 @@ $(document).ready(function(){
     /* var imageDataUrl = document.getElementById('capture_image').src; // Die Data-URL des Bildes */
     var element = document.createElement('a');
     element.setAttribute('href', imgURL); //imageDataUrl
-    element.setAttribute('download', `Pointcloud-Viewer_${imgID}.jpg`);
+    element.setAttribute('download', `${imgID}.jpg`);
 
     element.style.display = 'none';
     document.body.appendChild(element);

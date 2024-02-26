@@ -30,6 +30,54 @@ $(document).ready(function(){
         document.querySelector('#platform_name').innerHTML = info.systems.platform.name;
         document.querySelector('#platform_name').setAttribute('href', info.systems.platform.link);
 
+        var platform_type = info.systems.platform.type;
+        switch(platform_type.toLowerCase()){
+            case "drone":
+            case "drohne":
+            case "uav":
+            case "multicopter":
+            case "multirotor":
+            case "quadrocopter":
+            case "hexacopter":
+                document.querySelector('#platform_icon').style.color = '#ff0000';
+                break;
+            case "vtol":
+            case "evtol":
+            case "fixed-wing":
+            case "fixed-wings":
+            case "glider":
+                document.querySelector('#platform_icon').style.color = '#00ff00';
+                break;
+            case "car":
+            case "auto":
+            case "mobile":
+            case "kfz":
+            case "kraftfahrzeug":
+            case "vehicle":
+            case "motor vehicle":
+                document.querySelector('#platform_icon').style.color = '#0000ff';
+                break;
+            case "air craft":
+            case "aircraft":
+            case "plane":
+            case "flugzeug":
+                document.querySelector('#platform_icon').style.color = '#ffff00';
+                break;
+            case "handheld":
+            case "walk":
+            case "togo":
+            case "to go":
+            case "backpack":
+            case "rucksack":
+            case "zu fuß":
+            case "gehend":
+            case "laufend":
+            case "tragend":
+            case "getragen":
+                document.querySelector('#platform_icon').style.color = '#ff00ff';
+                break;
+        }
+
         //Set system payload
         if(info.systems.payload.visible != "true"){
             document.querySelector('.info-payload').remove();
@@ -92,7 +140,7 @@ $(document).ready(function(){
     });
 
     //Set project title and description
-    var title = document.querySelector('title').innerText;
+    var title = document.querySelector('[property="og:title"]').getAttribute('content');
     var description = document.querySelector('[name="description"]').getAttribute('content');
 
     //Add info button
@@ -117,7 +165,7 @@ $(document).ready(function(){
 				<div style="display: flex; flex-direction: row; row-gap: 16px; margin-top: 8px; flex-wrap: wrap;">
 
 					<div class="info-platform" style="display: flex; flex-direction: row; flex-grow: 1; width: 50%; min-width: 240px">
-						<i class="fa fa-circle"></i>
+						<i id="platform_icon" class="fa fa-circle"></i>
 						<div>
 							<p id="platform_type">Drone / VTOL</p>
 							<a id="platform_name" href=""></a>
@@ -125,7 +173,7 @@ $(document).ready(function(){
 					</div>
 
 					<div class="info-payload" style="display: flex; flex-direction: row; flex-grow: 1; width: 50%; min-width: 240px">
-						<i class="fa fa-circle"></i>
+						<i id="payload_icon" class="fa fa-circle"></i>
 						<div>
 							<p id="payload_type">LiDAR / Kamera</p>
 							<a id="payload_name" href="">YellowScan Navigator</a>
