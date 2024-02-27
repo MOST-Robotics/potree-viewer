@@ -244,3 +244,17 @@
     color: var(--font-color);
     margin-right: 4px;
 } */
+#platform_icon{
+    height: 32px; width: 32px;
+    /* margin: 2px; */
+    margin-right: 12px!important;
+    fill: var(--font-color);
+    color: var(--font-color);
+}
+#payload_icon{
+    height: 32px; width: 32px;
+    /* margin: 2px; */
+    margin-right: 12px!important;
+    fill: var(--font-color);
+    color: var(--font-color);
+}
