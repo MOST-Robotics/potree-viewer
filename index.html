@@ -74,7 +74,7 @@
 			<img class="guide_close-button" src="./libs/guide/icons/close.svg"/>
 		</div>
 		<div class="guide_list">
-			<div class="guide_list-element"><img src="./libs/guide/icons/double-click.svg"/><b>Double click</b>&nbsp;to jump to an area</div>
+			<div class="guide_list-element" style="background: linear-gradient(30deg, #FACA30, #f7b500); color: #000; font-weight: 500;"><img src="./libs/guide/icons/double-click-black.svg"/><b style="font-weight: 800">Double click</b>&nbsp;to jump to an area</div>
 			<div class="guide_list-element"><img src="./libs/guide/icons/scroll.svg"/><b>Scroll</b>&nbsp;to zoom</div>
 			<div class="guide_list-element"><img src="./libs/guide/icons/hold-left.svg"/><b>Hold left</b>&nbsp;to rotate</div>
 			<div class="guide_list-element"><img src="./libs/guide/icons/hold-right.svg"/><b>Hold right</b>&nbsp;to change position</div>
@@ -111,6 +111,7 @@
 			//material.intensityBrightness = 0;
 			//material.intensityContrast = 0;
 			//material.elevationRange = [-10, 10];
+			//material.gradient = Potree.Gradients.RAINBOW; //SPECTRAL, PLASMA, YELLOW_GREEN, VIRIDIS, INFERNO, GRAYSCALE, TURBO, RAINBOW, CONTOUR
 			
 			scene.addPointCloud(pointcloud);
 			
