@@ -1,6 +1,6 @@
 .share_menu_button{
 	/* background: linear-gradient(-30deg, #faca30, #f7b500); */
-	background: var(--color-3);
+	background: var(--element-color);
 	border: none;
 	border-radius: var(--border-radius-m);
 	height: 40px; width: 40px; min-height: 40px;
@@ -62,7 +62,7 @@
    background-color: #25d366;
  }
  .email {
-   background-color: var(--color-3);
+   background-color: var(--element-color);
 }
 
  /* Capture */
@@ -80,9 +80,9 @@
 }
 .capture-button {
   border: none;
-  color: #fff;
+  color: var(--font-color);
   border-radius: var(--border-radius-m) var(--border-radius-m) var(--border-radius-m) var(--border-radius-m);
-  background: var(--color-3);
+  background: var(--element-color);
   cursor: pointer;
   font-size: 16px;
   text-align: center;
@@ -95,7 +95,7 @@
   /* display: none; */
 }
 .capture-button:hover{
-  background: var(--color-4);
+  background: var(--element-color-2);
   transition: all .33s cubic-bezier(0,.5,.5,1);
 }
 /* .capture-button:hover{
@@ -105,6 +105,7 @@
 } */
 .capture-button i{
   margin-top: -1px;
+  color: var(--font-color); 
 }
 .capture-container{
   display: flex;
@@ -115,9 +116,9 @@
   /* position: relative; */
   z-index: 500;
   width: auto; max-width: 640px; height: auto;
-  background: var(--color-1);
+  background: var(--bg-color-2);
   border-radius: 16px;
-  border: 1px solid var(--color-2);
+  border: 1px solid var(--border-color);
 
   padding: 24px 24px 16px 24px;
   gap: 12px;
@@ -166,7 +167,7 @@
   border: none;
   color: #fff;
   border-radius: var(--border-radius-m);
-  background: var(--color-3);
+  background: var(--element-color);
   font-family: var(--font-family);
   cursor: pointer;
   font-size: 14px;
@@ -178,7 +179,7 @@
   transition: all .25s cubic-bezier(1,.5,.5,0);
 }
 #capture_download:hover{
-  background: var(--color-4);
+  background: var(--element-color-2);
   transition: all .33s cubic-bezier(0,.5,.5,1);
 }
 #capture_download i{
