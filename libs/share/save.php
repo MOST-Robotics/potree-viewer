@@ -81,6 +81,7 @@
         $source_img = imagecreatefromstring($data);
 
         // Saving path
+        //$host = gethostname();
         $watermark_path = '../../resources/watermark.png'; // Pfad zum Wasserzeichen-PNG
         $filename = $code . '.jpg'; // Dateiname für das gespeicherte Bild
         $path = '../../share/' . $filename; // Pfad zum Speichern des Bildes

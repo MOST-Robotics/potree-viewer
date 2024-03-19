@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="author" content="MOST Robotics GmbH">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="icon" href="resources/favicon.svg" sizes="any" type="image/svg+xml">
 	<title>MOST Pointcloud Viewer</title>
@@ -16,6 +16,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="./libs/guide/guide.css">
+	<link rel="stylesheet" type="text/css" href="./libs/share/share.css">
 </head>
 
 <body>
@@ -46,6 +47,7 @@
 	<script src="./libs/plasio/js/laslaz.js"></script>
 
 	<script src="./libs/guide/guide.js"></script>
+	<script src="./libs/share/share.js"></script>
 	
 	<!-- INCLUDE ADDITIONAL DEPENDENCIES HERE -->
 	<!-- INCLUDE SETTINGS HERE -->
@@ -62,12 +64,14 @@
 			<img class="guide_close-button" src="./libs/guide/icons/close.svg"/>
 		</div>
 		<div class="guide_list">
-			<div class="guide_list-element"><img src="./libs/guide/icons/double-click.svg"/><b>Double click</b>&nbsp;to jump to an area</div>
+			<div class="guide_list-element" style="background: linear-gradient(30deg, #FACA30, #f7b500); color: #000; font-weight: 500;"><img src="./libs/guide/icons/double-click-black.svg"/><b style="font-weight: 800">Double click</b>&nbsp;to jump to an area</div>
 			<div class="guide_list-element"><img src="./libs/guide/icons/scroll.svg"/><b>Scroll</b>&nbsp;to zoom</div>
 			<div class="guide_list-element"><img src="./libs/guide/icons/hold-left.svg"/><b>Hold left</b>&nbsp;to rotate</div>
 			<div class="guide_list-element"><img src="./libs/guide/icons/hold-right.svg"/><b>Hold right</b>&nbsp;to change position</div>
 		</div>
 	</div>
+
+	<div class="capture-area"></div>
 
 	<!-- CONFIG -->
 	<script src="./configuration.js"></script>

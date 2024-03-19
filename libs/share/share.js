@@ -224,11 +224,11 @@ $(document).ready(function(){
 
    });
 
-   //Download image
-   document.getElementById('capture_download').addEventListener('click', function() {
-    /* var imageDataUrl = document.getElementById('capture_image').src; // Die Data-URL des Bildes */
+    //Download image
+    document.getElementById('capture_download').addEventListener('click', function() {
+    var imageDataUrl = document.getElementById('capture_image').src; // Die Data-URL des Bildes
     var element = document.createElement('a');
-    element.setAttribute('href', imgURL); //imageDataUrl
+    element.setAttribute('href', imageDataUrl); //imageDataUrl
     element.setAttribute('download', `${imgID}.jpg`);
 
     element.style.display = 'none';
@@ -238,5 +238,18 @@ $(document).ready(function(){
 
     document.body.removeChild(element);
     });
+
+/*     var imageDataUrl = document.getElementById('capture_image').src; // Stelle sicher, dass dies die korrekte ID des <img> Tags ist.
+    var element = document.createElement('a');
+    element.setAttribute('href', imageDataUrl);
+    element.setAttribute('download', 'MOST-Viewer_Capture.jpg'); // Du kannst hier einen dynamischen Namen verwenden, wenn du möchtest.
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+ */
 
 });
