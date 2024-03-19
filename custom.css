@@ -242,34 +242,34 @@ html[data-theme='qs']{
     --color-black:      rgba(0, 0, 0, 1);           /*000000*/
 	
 	/* Elements */
-	--color-0: 			rgba( 128, 128, 128, 1);          /*080808*/
-	--color-1: 			rgba( 160, 160, 160, 1);       /*181818*/
-	--color-2: 			rgba( 196, 196, 196, 1);       /*242424*/
-	--color-3: 			rgba( 218, 218, 218, 1);       /*323232*/
-	--color-4: 			rgba( 236, 236, 236, 1);    /*404040*/
-    --color-5: 			rgba( 255, 255, 255, 1);    /*484848*/
+	--color-0: 			rgba( 8, 8, 8, 1);          /*080808*/
+	--color-1: 			rgba( 24, 24, 24, 1);       /*181818*/
+	--color-2: 			rgba( 36, 36, 36, 1);       /*242424*/
+	--color-3: 			rgba( 50, 50, 50, 1);       /*323232*/
+	--color-4: 			rgba( 64, 64, 64, 1);       /*404040*/
+    --color-5: 			rgba( 72, 72, 72, 1); 
 
 	/* Accents */
     --color-6: 			rgba( 250, 202, 48, 1);     /*FACA30*/
 	--color-7: 			rgba( 247, 181, 0, 1);      /*F7B500*/
 
 	/* Invert */
-    --color-8:          rgba(18, 18, 18, 1);     /*ECECEC*/
+    --color-8:          rgba(236, 236, 236, 1);     /*ECECEC*/
 
-	--bg-color:			var(--color-2);
-	--bg-color-2:		var(--color-2);
-	--bg-light-color:	var(--color-2);
-	--bg-dark-color:	var(--color-1);
-	--bg-hover-color:	var(--color-2);
+	--bg-color:				var(--color-0);
+	--bg-color-2:			var(--color-1);
+	--bg-light-color:		var(--color-2);
+	--bg-dark-color:		var(--color-1);
+	--bg-hover-color:		var(--color-2);
 
-	--border-color:		var(--color-0);
-    --panel-color:      var(--color-3);
-	--panel-color-2:    var(--color-3);
-	--element-color:	var(--color-4);
-	--element-color-2:	var(--color-5);
+	--border-color:			var(--color-0);
+    --panel-color:      	var(--color-1);
+	--panel-color-2:    	var(--color-2);
+	--element-color:		var(--color-3);
+	--element-color-2:		var(--color-4);
 
-	--toggle-background:		var(--color-4);
-	--toggle-background-active:	#000;
+	--toggle-background:		var(--color-3);
+	--toggle-background-active:	var(--color-8);
 	--toggle-font:				var(--font-color);
 	--toggle-font-active:		#fff;
 	
@@ -277,8 +277,8 @@ html[data-theme='qs']{
 	--measurement-detail-node-bg-dark:		var(--color-2);
 	--measurement-detail-area-bg-color:		var(--color-5);
 
-	--font-color:		var(--color-black);
-	--font-color-2:		var(--color-white);
+	--font-color:		var(--color-white);
+	--font-color-2:		var(--color-black);
     --font-family: 'Montserrat', sans-serif;
 
     --border-radius-xs:     1px;
@@ -292,22 +292,22 @@ html[data-theme='qs']{
 	--ED-style: inset 0 4px 4px #ffffff00, inset 0 -8px 8px #00000000, 0px 2px 8px #00000000;
 
 	.logo{
-		background: url('resources/qs.png');
+		background: url('resources/QSW.png');
 		width: 50%;
 	}
 
 	/* Accordion */
 	.accordion > h3{
 		/* background: linear-gradient(30deg, var(--color-6), var(--color-7))!important; */
-		background: #000!important;
-		color:		#fff;
+		background: #fff!important;
+		color:		#000;
 	}
 
 	/* Menu button */
 	.potree_menu_toggle{
 		/* background: linear-gradient(-30deg, #faca30, #f7b500); */
-		background: #000;
-		color: #fff;
+		background: #fff;
+		color: #000;
 	}
 
 	/* Enable/Disable 3D Styles */
