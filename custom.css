@@ -237,6 +237,126 @@ html[data-theme='light']{
 	}
 	
 }
+html[data-theme='ys']{
+
+    --color-white:      rgba(255, 255, 255, 1);     /*FFFFFF*/
+    --color-black:      rgba(0, 0, 0, 1);           /*000000*/
+	
+	/* Elements */
+	--color-0: 			rgba( 16, 16, 20, 1);          /*080808*/
+	--color-1: 			rgba( 30, 30, 36, 1);       /*181818*/
+	--color-2: 			rgba( 57, 57, 69, 1);       /*242424*/
+	--color-3: 			rgba( 64, 64, 72, 1);       /*323232*/
+	--color-4: 			rgba( 64, 64, 72, 1);       /*404040*/
+    --color-5: 			rgb(64, 64, 72);       /*484848*/
+
+	/* Accents */
+    --color-6: 			rgba( 242, 169, 0, 1);     /*FACA30*/
+	--color-7: 			rgba( 242, 169, 0, 1);      /*F7B500*/
+
+	/* Invert */
+    --color-8:          rgba(236, 236, 236, 1);     /*ECECEC*/
+
+	--bg-color:				var(--color-0);
+	--bg-color-2:			var(--color-1);
+	--bg-light-color:		var(--color-2);
+	--bg-dark-color:		var(--color-1);
+	--bg-hover-color:		var(--color-2);
+
+	--border-color:			var(--color-0);
+    --panel-color:      	var(--color-1);
+	--panel-color-2:    	var(--color-2);
+	--element-color:		var(--color-2);
+	--element-color-2:		var(--color-3);
+
+	--toggle-background:	var(--color-3);
+	--toggle-background-active:	linear-gradient(30deg, var(--color-6), var(--color-7));
+	--toggle-font:			var(--font-color);
+	--toggle-font-active:	#000;
+	
+	--measurement-detail-node-bg-light:		var(--color-1);
+	--measurement-detail-node-bg-dark:		var(--color-2);
+	--measurement-detail-area-bg-color:		var(--color-5);
+
+	--font-color:		var(--color-white);
+	--font-color-2:		var(--color-black);
+    --font-family: 'Montserrat', sans-serif;
+
+    --border-radius-xs:     2px;
+    --border-radius-s:      4px;
+    --border-radius-m:      8px;
+    --border-radius-l:      12px;
+    --border-radius-xl:     16px;
+    --border-radius-xxl:    24px;
+
+	/* 3D Style */
+	--ED-style: inset 0 0px 0px #ffffff00, inset 0 -0px 0px #00000020, 0px 0px 0px #00000000;
+
+	.logo{
+		background: url('resources/ys.png');
+		width: 60%!important;
+	}
+
+	/* Accordion */
+	.accordion > h3{
+		background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
+		color:		#000;
+	}
+
+	/* Menu button */
+	.potree_menu_toggle{
+		background: var(--color-6);
+		color: #000;
+	}
+
+	/* Enable/Disable 3D Styles */
+	.button-icon{
+		box-shadow: var(--ED-style)!important;
+	}
+	fieldset > span{
+		position: relative;
+	}
+	fieldset > span:after{
+		box-shadow: var(--ED-style)!important;
+	}
+	.inner-panel{
+		box-shadow: none!important;
+	}
+	input{
+		box-shadow: var(--ED-style)!important;
+	}
+	input:before{
+		box-shadow: var(--ED-style)!important;
+	}
+	button{
+		box-shadow: var(--ED-style)!important;
+	}
+	#potree_menu > h3{
+		box-shadow: none!important;
+	}
+	#scene_export{
+		box-shadow: none!important;
+	}
+	.class-list-element{
+		box-shadow: none!important;
+	}
+	.sp-preview{
+		box-shadow: none!important;
+	}
+	.sp-preview-inner{
+		box-shadow: none!important;
+	}
+	#optMaterial-button{
+		box-shadow: var(--ED-style)!important;
+	}
+	.jstree-clicked{
+		box-shadow: none!important;
+	}
+	.jstree-hovered{
+		box-shadow: none!important;
+	}
+	
+}
 html[data-theme='qs']{
     --color-white:      rgba(255, 255, 255, 1);     /*FFFFFF*/
     --color-black:      rgba(0, 0, 0, 1);           /*000000*/
@@ -271,7 +391,7 @@ html[data-theme='qs']{
 	--toggle-background:		var(--color-3);
 	--toggle-background-active:	var(--color-8);
 	--toggle-font:				var(--font-color);
-	--toggle-font-active:		#fff;
+	--toggle-font-active:		#000;
 	
 	--measurement-detail-node-bg-light:		var(--color-1);
 	--measurement-detail-node-bg-dark:		var(--color-2);
@@ -309,6 +429,155 @@ html[data-theme='qs']{
 		background: #fff;
 		color: #000;
 	}
+
+	.ui-slider-handle:active{
+		background: linear-gradient(30deg, var(--color-white), var(--color-white))!important;
+	}
+
+	  /* Fügen Sie den Haken im "checked" Zustand hinzu */
+	  input[type="checkbox"]:checked::before {
+		background-color: var(--color-white)!important;
+	  }
+
+	  .inner-panel{
+		border-radius: var(--border-radius-m)!important;
+	}
+
+	/* Enable/Disable 3D Styles */
+	.button-icon{
+		box-shadow: var(--ED-style)!important;
+	}
+	fieldset > span:after{
+		box-shadow: var(--ED-style)!important;
+	}
+	.inner-panel{
+		box-shadow: none!important;
+	}
+	input{
+		box-shadow: var(--ED-style)!important;
+	}
+	input:before{
+		box-shadow: var(--ED-style)!important;
+	}
+	button{
+		box-shadow: var(--ED-style)!important;
+	}
+	#potree_menu > h3{
+		box-shadow: none!important;
+	}
+	#scene_export{
+		box-shadow: none!important;
+	}
+	.class-list-element{
+		box-shadow: none!important;
+	}
+	.sp-preview{
+		box-shadow: none!important;
+	}
+	.sp-preview-inner{
+		box-shadow: none!important;
+	}
+	#optMaterial-button{
+		box-shadow: var(--ed-style)!important;
+	}
+	.jstree-clicked{
+		box-shadow: none!important;
+	}
+	.jstree-hovered{
+		box-shadow: none!important;
+	}
+	
+}
+
+html[data-theme='hwr']{
+    --color-white:      rgba(255, 255, 255, 1);     /*FFFFFF*/
+    --color-black:      rgba(0, 0, 0, 1);           /*000000*/
+	
+	/* Elements */
+	--color-0: 			rgba( 24, 24, 24, 1);          /*080808*/
+	--color-1: 			rgba( 40, 40, 40, 1);       /*181818*/
+	--color-2: 			rgba( 48, 48, 48, 1);       /*242424*/
+	--color-3: 			rgba( 56, 56, 56, 1);       /*323232*/
+	--color-4: 			rgba( 64, 64, 64, 1);       /*404040*/
+    --color-5: 			rgba( 72, 72, 72, 1); 
+
+	/* Accents */
+    --color-6: 			rgba( 66, 73, 153, 1);     /*424999*/
+	--color-7: 			rgba( 247, 181, 0, 1);      /*F7B500*/
+
+	/* Invert */
+    --color-8:          rgba(236, 236, 236, 1);     /*ECECEC*/
+
+	--bg-color:				var(--color-0);
+	--bg-color-2:			var(--color-1);
+	--bg-light-color:		var(--color-2);
+	--bg-dark-color:		var(--color-1);
+	--bg-hover-color:		var(--color-2);
+
+	--border-color:			var(--color-0);
+    --panel-color:      	var(--color-1);
+	--panel-color-2:    	var(--color-2);
+	--element-color:		var(--color-4);
+	--element-color-2:		var(--color-5);
+
+	--toggle-background:		var(--color-4);
+	--toggle-background-active:	var(--color-6);
+	--toggle-font:				var(--font-color);
+	--toggle-font-active:		#fff;
+	
+	--measurement-detail-node-bg-light:		var(--color-1);
+	--measurement-detail-node-bg-dark:		var(--color-2);
+	--measurement-detail-area-bg-color:		var(--color-5);
+
+	--font-color:		var(--color-white);
+	--font-color-2:		var(--color-black);
+    --font-family: 'Montserrat', sans-serif;
+
+    --border-radius-xs:     1px;
+    --border-radius-s:      2px;
+    --border-radius-m:      4px;
+    --border-radius-l:      8px;
+    --border-radius-xl:     12px;
+    --border-radius-xxl:    16px;
+
+	/* 3D Style */
+	--ED-style: inset 0 4px 4px #ffffff00, inset 0 -8px 8px #00000000, 0px 2px 8px #00000000;
+
+	.logo{
+		background: url('resources/rink.png');
+		width: 50%;
+	}
+
+	/* Accordion */
+	.accordion > h3{
+		/* background: linear-gradient(30deg, var(--color-6), var(--color-7))!important; */
+		background: var(--color-6)!important;
+		color:		#fff!important;
+		font-weight: 600!important;
+	}
+
+	.inner-panel{
+		border-radius: var(--border-radius-m)!important;
+	}
+
+	/* Menu button */
+	.potree_menu_toggle{
+		/* background: linear-gradient(-30deg, #faca30, #f7b500); */
+		background: var(--color-6);
+	}
+	.potree_menu_toggle:after{
+		color: var(--color-white)!important;
+	}
+
+	.ui-slider-handle:active{
+		background: linear-gradient(30deg, var(--color-white), var(--color-white))!important;
+	}
+
+	  /* Fügen Sie den Haken im "checked" Zustand hinzu */
+	  input[type="checkbox"]:checked::before {
+		background-color: var(--color-6)!important;
+		color: #ffffff!important;
+	  }
 
 	/* Enable/Disable 3D Styles */
 	.button-icon{

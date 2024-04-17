@@ -429,7 +429,7 @@ body{
 }
 
 .ui-slider-handle:active{
-	background: linear-gradient(30deg, var(--color-6), var(--color-7))!important;
+	background: linear-gradient(30deg, var(--color-6), var(--color-7));
 	cursor: grabbing!important;
 }
 
@@ -1273,7 +1273,7 @@ input[type="checkbox"] {
 .inner-panel{
 	position: relative;
 	background: var(--panel-color);
-	border-radius: var(--border-radius-l)!important;
+	border-radius: var(--border-radius-l);
 	padding: 16px 16px;
 	margin-left: 12px; margin-right: 12px; margin-bottom: 6px;
 	overflow: hidden;
