@@ -1,0 +1,29 @@
+### SETUP ###
+
+1. Install XAMPP (Local Apache und MySQL-Server)
+https://www.apachefriends.org/de/index.html
+
+2. Create new folder 'potree' in C:/xampp/htdocs
+
+3. Change XAMPP path to C:/xampp/htdocs/potree in httpd.conf file
+
+4. Load potree files in folder
+
+5. Start XAMPP and visit 127.0.0.1
+
+
+### CONVERTING ###
+
+1. Start Terminal as administrator
+
+2. Navigate to folder with "cd C:/xampp/htdocs/potree"
+
+3. Load LAZ/LAS to 'LAZLAS' folder
+
+4. Start converting with following command:
+
+   "./PotreeConverter.exe C:/xampp/htdocs/potree/LAZLAS/filename.xxx -o C:/xampp/htdocs/potree -p Title --encoding BROTLI"
+
+---
+
+2021 - 2024 © MOST Robotics GmbH
