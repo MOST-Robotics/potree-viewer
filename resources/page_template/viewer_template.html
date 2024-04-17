@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="author" content="MOST Robotics GmbH">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="icon" href="resources/favicon.svg" sizes="any" type="image/svg+xml">
 	<title>MOST Pointcloud Viewer</title>
+
+	<meta property="og:title" content="MOST Pointcloud Viewer" />
+	<meta name="description" content="Projektbeschriebung... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+	sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+	ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+	magna aliquyam erat, sed diam voluptua.">
+	<meta name="author" content="MOST Robotics">
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://viewer.mostrobotics.com" />
+	<meta property="og:image" content="resources/thumbnail.jpg" />
 
 	<link rel="stylesheet" type="text/css" href="./libs/potree/potree.css">
 	<link rel="stylesheet" type="text/css" href="./libs/jquery-ui/jquery-ui.min.css">
@@ -16,6 +24,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="./libs/guide/guide.css">
+	<link rel="stylesheet" type="text/css" href="./libs/info/info.css">
 	<link rel="stylesheet" type="text/css" href="./libs/share/share.css">
 </head>
 
@@ -47,6 +56,7 @@
 	<script src="./libs/plasio/js/laslaz.js"></script>
 
 	<script src="./libs/guide/guide.js"></script>
+	<script src="./libs/info/info.js"></script>
 	<script src="./libs/share/share.js"></script>
 	
 	<!-- INCLUDE ADDITIONAL DEPENDENCIES HERE -->
@@ -57,7 +67,7 @@
 		<div id="potree_sidebar_container"> </div>
 	</div>
 
-	<!-- GUIDE -->
+	<!-- <div class="guide_area"> -->
 	<div class="guide_container guide_position guide_container-closed" id="guide">
 		<div class="guide_header">
 			<div class="guide_title">Guide</div>
@@ -70,9 +80,11 @@
 			<div class="guide_list-element"><img src="./libs/guide/icons/hold-right.svg"/><b>Hold right</b>&nbsp;to change position</div>
 		</div>
 	</div>
-
+	<!-- </div> -->
+	
+	<div class="info-area"></div>
 	<div class="capture-area"></div>
-
+	
 	<!-- CONFIG -->
 	<script src="./configuration.js"></script>
 
