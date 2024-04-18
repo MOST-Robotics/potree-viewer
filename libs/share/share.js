@@ -143,7 +143,7 @@ $(document).ready(function(){
         //Save image
         imgID = generateImgID(8);
         imgURL = host + "/share/" + imgID + ".jpg";
-        imgPath = "/share/" + imgID + ".jpg";
+        imgPath = "share/" + imgID + ".jpg";
 
         $.ajax({
             type: "POST",
