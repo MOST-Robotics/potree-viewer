@@ -414,15 +414,6 @@ body{
 	box-sizing: border-box!important;
 	outline: none!important;
 
-	/* Hexagon */
-	clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)!important;
-
-	/* Circle */
-	/* clip-path: ellipse(50%)!important; */
-
-	/* Size*/
-	transform: scale(1.2);
-
     aspect-ratio: 1/1!important;
 	margin-top: 1px;
 	cursor: grab!important;
